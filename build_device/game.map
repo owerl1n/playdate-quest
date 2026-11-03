@@ -1,0 +1,1292 @@
+Archive member included to satisfy reference by file (symbol)
+
+D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+                              CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj (__aeabi_f2d)
+D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+                              CMakeFiles\playdate-quest_DEVICE.dir\src\util\wav_ima_adpcm.c.obj (__aeabi_uldivmod)
+D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+                              D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o) (__udivmoddi4)
+D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
+                              D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o) (__aeabi_ldiv0)
+D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-malloc.o)
+                              CMakeFiles\playdate-quest_DEVICE.dir\src\util\wav_ima_adpcm.c.obj (malloc)
+D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-memset.o)
+                              CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj (memset)
+D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-impure.o)
+                              D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-malloc.o) (_impure_ptr)
+D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+                              D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-impure.o) (__sf)
+D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fwalk.o)
+                              D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o) (_fwalk_sglue)
+D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-stdio.o)
+                              D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o) (__sread)
+D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-closer.o)
+                              D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-stdio.o) (_close_r)
+D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-reent.o)
+                              D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-closer.o) (errno)
+D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lseekr.o)
+                              D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-stdio.o) (_lseek_r)
+D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-readr.o)
+                              D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-stdio.o) (_read_r)
+D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-writer.o)
+                              D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-stdio.o) (_write_r)
+D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+                              D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o) (__retarget_lock_init_recursive)
+D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fclose.o)
+                              D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o) (_fclose_r)
+D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fflush.o)
+                              D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fclose.o) (__sflush_r)
+D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_cos.o)
+                              CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj (cosf)
+D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_sin.o)
+                              CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj (sinf)
+D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-kf_cos.o)
+                              D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_cos.o) (__kernel_cosf)
+D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-kf_sin.o)
+                              D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_cos.o) (__kernel_sinf)
+D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_rem_pio2.o)
+                              D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_cos.o) (__ieee754_rem_pio2f)
+D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_fabs.o)
+                              D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_rem_pio2.o) (fabsf)
+D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-kf_rem_pio2.o)
+                              D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_rem_pio2.o) (__kernel_rem_pio2f)
+D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_scalbn.o)
+                              D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-kf_rem_pio2.o) (scalbnf)
+D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_floor.o)
+                              D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-kf_rem_pio2.o) (floorf)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\draw_style.c.obj
+ .data          0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\draw_style.c.obj
+ .bss           0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\draw_style.c.obj
+ .text.draw_scanline_checker
+                0x00000000      0x2a0 CMakeFiles\playdate-quest_DEVICE.dir\src\draw_style.c.obj
+ .text.tri_edge_uv_init
+                0x00000000      0x240 CMakeFiles\playdate-quest_DEVICE.dir\src\draw_style.c.obj
+ .text.draw_tri_checker
+                0x00000000      0x494 CMakeFiles\playdate-quest_DEVICE.dir\src\draw_style.c.obj
+ .text          0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\globals.c.obj
+ .data          0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\globals.c.obj
+ .bss           0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\globals.c.obj
+ .text          0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+ .data          0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+ .bss           0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+ .text          0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+ .data          0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+ .bss           0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+ .text.xform_make
+                0x00000000       0x30 CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+ .text.xform_axes
+                0x00000000       0x68 CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+ .text.xform_make_translate
+                0x00000000       0x28 CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+ .text.xform_make_axis_angle
+                0x00000000       0xf0 CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+ .text.xform_multiply
+                0x00000000      0x144 CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+ .text.xform_get_determinant
+                0x00000000       0x58 CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+ .text          0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .data          0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .bss           0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .text.plat_gfx_get_debug_frame
+                0x00000000        0x4 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .text.plat_gfx_begin_stats
+                0x00000000       0x1c CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .rodata.plat_gfx_draw_stats.str1.4
+                0x00000000       0x1c CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .text.plat_gfx_draw_stats
+                0x00000000      0x144 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .text.plat_gfx_load_bitmap
+                0x00000000       0x10 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .text.plat_gfx_get_bitmap_size
+                0x00000000       0x20 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .text.plat_gfx_draw_bitmap
+                0x00000000       0x20 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .text.plat_file_open_write
+                0x00000000       0x10 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .text.plat_file_write
+                0x00000000       0x10 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .text.plat_file_get_size
+                0x00000000       0x34 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .text.plat_sound_open_file
+                0x00000000       0x44 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .text.plat_sound_free
+                0x00000000       0x10 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .text.plat_sound_set_volume
+                0x00000000       0x14 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .text.plat_sound_get_volume
+                0x00000000       0x30 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .text.plat_sound_play
+                0x00000000       0x14 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .text.plat_sound_stop
+                0x00000000       0x10 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .text.plat_sound_is_playing
+                0x00000000       0x1c CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .text.plat_sound_get_length
+                0x00000000       0x10 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .text.plat_sound_get_time
+                0x00000000       0x10 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .text.plat_sound_set_time
+                0x00000000       0x10 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .text.plat_time_reset
+                0x00000000       0x10 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .bss.s_disp_delta_time
+                0x00000000        0x4 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .bss.s_acc_frame_count
+                0x00000000        0x4 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .bss.s_acc_delta_time
+                0x00000000        0x4 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .bss.s_frame_beg_time
+                0x00000000        0x4 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .text          0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+ .data          0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+ .bss           0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+ .text.scene_shutdown
+                0x00000000       0x48 CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+ .text.scene_setCenter
+                0x00000000        0xc CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+ .text.scene_add_line
+                0x00000000       0x74 CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+ .text.mesh_create
+                0x00000000       0x8c CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+ .text.mesh_free
+                0x00000000        0x8 CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+ .text          0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\util\adjacency_generator.c.obj
+ .data          0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\util\adjacency_generator.c.obj
+ .bss           0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\util\adjacency_generator.c.obj
+ .text          0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+ .data          0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+ .bss           0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+ .text.clear_screen_buffers
+                0x00000000       0x28 CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+ .text.draw_dithered_scanline
+                0x00000000       0xf4 CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+ .text.draw_dithered_screen
+                0x00000000       0x2c CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+ .text.draw_dithered_screen_2x2
+                0x00000000      0x10c CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+ .text.draw_line
+                0x00000000       0x84 CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+ .data.g_order_pattern_4x4
+                0x00000000      0x100 CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+ .data.g_order_pattern_4x3
+                0x00000000       0x90 CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+ .data.g_order_pattern_4x2
+                0x00000000       0x40 CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+ .data.g_order_pattern_3x2
+                0x00000000       0x30 CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+ .data.g_order_pattern_2x2
+                0x00000000       0x20 CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+ .bss.s_dither4x4_g
+                0x00000000        0x4 CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+ .bss.s_dither4x4_r
+                0x00000000        0x4 CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+ .bss.s_dither2x2_g
+                0x00000000        0x4 CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+ .bss.s_dither2x2_r
+                0x00000000        0x4 CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+ .text          0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\util\radixsort.c.obj
+ .data          0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\util\radixsort.c.obj
+ .bss           0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\util\radixsort.c.obj
+ .text          0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\util\image_loader.c.obj
+ .data          0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\util\image_loader.c.obj
+ .bss           0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\util\image_loader.c.obj
+ .text          0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\util\wav_ima_adpcm.c.obj
+ .data          0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\util\wav_ima_adpcm.c.obj
+ .bss           0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\util\wav_ima_adpcm.c.obj
+ .text.wav_decode_state_init
+                0x00000000       0x20 CMakeFiles\playdate-quest_DEVICE.dir\src\util\wav_ima_adpcm.c.obj
+ .text.wav_ima_adpcm_decode
+                0x00000000      0x2e8 CMakeFiles\playdate-quest_DEVICE.dir\src\util\wav_ima_adpcm.c.obj
+ .text.wav_parse_header
+                0x00000000       0xdc CMakeFiles\playdate-quest_DEVICE.dir\src\util\wav_ima_adpcm.c.obj
+ .rodata.kImaStepTable
+                0x00000000      0x164 CMakeFiles\playdate-quest_DEVICE.dir\src\util\wav_ima_adpcm.c.obj
+ .rodata.kImaIndexTable
+                0x00000000       0x40 CMakeFiles\playdate-quest_DEVICE.dir\src\util\wav_ima_adpcm.c.obj
+ .debug_info    0x00000000      0x9b6 CMakeFiles\playdate-quest_DEVICE.dir\src\util\wav_ima_adpcm.c.obj
+ .debug_abbrev  0x00000000      0x280 CMakeFiles\playdate-quest_DEVICE.dir\src\util\wav_ima_adpcm.c.obj
+ .debug_loc     0x00000000      0xc2a CMakeFiles\playdate-quest_DEVICE.dir\src\util\wav_ima_adpcm.c.obj
+ .debug_aranges
+                0x00000000       0x30 CMakeFiles\playdate-quest_DEVICE.dir\src\util\wav_ima_adpcm.c.obj
+ .debug_ranges  0x00000000      0x378 CMakeFiles\playdate-quest_DEVICE.dir\src\util\wav_ima_adpcm.c.obj
+ .debug_line    0x00000000      0x875 CMakeFiles\playdate-quest_DEVICE.dir\src\util\wav_ima_adpcm.c.obj
+ .debug_str     0x00000000      0x4d1 CMakeFiles\playdate-quest_DEVICE.dir\src\util\wav_ima_adpcm.c.obj
+ .comment       0x00000000       0x47 CMakeFiles\playdate-quest_DEVICE.dir\src\util\wav_ima_adpcm.c.obj
+ .debug_frame   0x00000000       0x90 CMakeFiles\playdate-quest_DEVICE.dir\src\util\wav_ima_adpcm.c.obj
+ .ARM.attributes
+                0x00000000       0x30 CMakeFiles\playdate-quest_DEVICE.dir\src\util\wav_ima_adpcm.c.obj
+ .text          0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\D_\Playdate\PlaydateSDK\C_API\buildsupport\setup.c.obj
+ .data          0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\D_\Playdate\PlaydateSDK\C_API\buildsupport\setup.c.obj
+ .bss           0x00000000        0x0 CMakeFiles\playdate-quest_DEVICE.dir\D_\Playdate\PlaydateSDK\C_API\buildsupport\setup.c.obj
+ .text._malloc_r
+                0x00000000        0xc CMakeFiles\playdate-quest_DEVICE.dir\D_\Playdate\PlaydateSDK\C_API\buildsupport\setup.c.obj
+ .text._realloc_r
+                0x00000000       0x10 CMakeFiles\playdate-quest_DEVICE.dir\D_\Playdate\PlaydateSDK\C_API\buildsupport\setup.c.obj
+ .text._free_r  0x00000000       0x14 CMakeFiles\playdate-quest_DEVICE.dir\D_\Playdate\PlaydateSDK\C_API\buildsupport\setup.c.obj
+ .text          0x00000000      0x378 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .data          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .bss           0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .debug_line_str
+                0x00000000       0xec D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x00000000       0xac D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x00000000       0x22 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+ .text          0x00000000       0x30 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .data          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .bss           0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .debug_line_str
+                0x00000000       0xe7 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x00000000       0x2c D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .ARM.attributes
+                0x00000000       0x22 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .text          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+ .data          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+ .bss           0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+ .text.__udivmoddi4
+                0x00000000      0x320 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+ .ARM.extab.text.__udivmoddi4
+                0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+ .ARM.exidx.text.__udivmoddi4
+                0x00000000        0x8 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x00000000       0x44 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+ .ARM.attributes
+                0x00000000       0x34 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+ .text          0x00000000        0x4 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
+ .data          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
+ .debug_line_str
+                0x00000000       0xeb D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x00000000       0x22 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
+ .text          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-malloc.o)
+ .data          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-malloc.o)
+ .bss           0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-malloc.o)
+ .text.malloc   0x00000000       0x10 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-malloc.o)
+ .text.free     0x00000000       0x10 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-malloc.o)
+ .debug_frame   0x00000000       0x30 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-malloc.o)
+ .ARM.attributes
+                0x00000000       0x34 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-malloc.o)
+ .text          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-memset.o)
+ .data          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-memset.o)
+ .bss           0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-memset.o)
+ .text          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-impure.o)
+ .data          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-impure.o)
+ .bss           0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-impure.o)
+ .data._impure_ptr
+                0x00000000        0x4 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-impure.o)
+ .data._impure_data
+                0x00000000      0x200 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-impure.o)
+ .ARM.attributes
+                0x00000000       0x34 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-impure.o)
+ .text          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+ .data          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+ .bss           0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+ .text.stdio_exit_handler
+                0x00000000       0x18 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+ .text.cleanup_stdio
+                0x00000000       0x40 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+ .text.__fp_lock
+                0x00000000       0x1c D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+ .text.__fp_unlock
+                0x00000000       0x1c D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+ .text.global_stdio_init.part.0
+                0x00000000       0xf0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+ .text.__sfp    0x00000000       0xc0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+ .text.__sinit  0x00000000       0x3c D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+ .text.__sfp_lock_acquire
+                0x00000000        0xc D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+ .text.__sfp_lock_release
+                0x00000000        0xc D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+ .text.__fp_lock_all
+                0x00000000       0x24 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+ .text.__fp_unlock_all
+                0x00000000       0x24 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+ .data.__sglue  0x00000000        0xc D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+ .bss.__sf      0x00000000      0x138 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+ .bss.__stdio_exit_handler
+                0x00000000        0x4 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+ .debug_frame   0x00000000      0x13c D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+ .ARM.attributes
+                0x00000000       0x34 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+ .text          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fwalk.o)
+ .data          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fwalk.o)
+ .bss           0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fwalk.o)
+ .text._fwalk_sglue
+                0x00000000       0x44 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fwalk.o)
+ .debug_frame   0x00000000       0x34 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fwalk.o)
+ .ARM.attributes
+                0x00000000       0x34 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fwalk.o)
+ .text          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-stdio.o)
+ .data          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-stdio.o)
+ .bss           0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-stdio.o)
+ .text.__sread  0x00000000       0x24 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-stdio.o)
+ .text.__seofread
+                0x00000000        0x4 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-stdio.o)
+ .text.__swrite
+                0x00000000       0x40 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-stdio.o)
+ .text.__sseek  0x00000000       0x24 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-stdio.o)
+ .text.__sclose
+                0x00000000        0x8 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-stdio.o)
+ .debug_frame   0x00000000       0x8c D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-stdio.o)
+ .ARM.attributes
+                0x00000000       0x34 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-stdio.o)
+ .text          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-closer.o)
+ .data          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-closer.o)
+ .bss           0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-closer.o)
+ .text._close_r
+                0x00000000       0x24 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-closer.o)
+ .debug_frame   0x00000000       0x2c D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-closer.o)
+ .ARM.attributes
+                0x00000000       0x34 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-closer.o)
+ .text          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-reent.o)
+ .data          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-reent.o)
+ .bss           0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-reent.o)
+ .text._reclaim_reent
+                0x00000000       0x6c D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-reent.o)
+ .bss.errno     0x00000000        0x4 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-reent.o)
+ .debug_frame   0x00000000       0x3c D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-reent.o)
+ .ARM.attributes
+                0x00000000       0x34 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-reent.o)
+ .text          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lseekr.o)
+ .data          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lseekr.o)
+ .bss           0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lseekr.o)
+ .text._lseek_r
+                0x00000000       0x2c D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lseekr.o)
+ .debug_frame   0x00000000       0x2c D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lseekr.o)
+ .ARM.attributes
+                0x00000000       0x34 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lseekr.o)
+ .text          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-readr.o)
+ .data          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-readr.o)
+ .bss           0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-readr.o)
+ .text._read_r  0x00000000       0x2c D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-readr.o)
+ .debug_frame   0x00000000       0x2c D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-readr.o)
+ .ARM.attributes
+                0x00000000       0x34 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-readr.o)
+ .text          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-writer.o)
+ .data          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-writer.o)
+ .bss           0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-writer.o)
+ .text._write_r
+                0x00000000       0x2c D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-writer.o)
+ .debug_frame   0x00000000       0x2c D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-writer.o)
+ .ARM.attributes
+                0x00000000       0x34 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-writer.o)
+ .text          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+ .data          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+ .bss           0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+ .text.__retarget_lock_init
+                0x00000000        0x4 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+ .text.__retarget_lock_init_recursive
+                0x00000000        0x4 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+ .text.__retarget_lock_close
+                0x00000000        0x4 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+ .text.__retarget_lock_close_recursive
+                0x00000000        0x4 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+ .text.__retarget_lock_acquire
+                0x00000000        0x4 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+ .text.__retarget_lock_acquire_recursive
+                0x00000000        0x4 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+ .text.__retarget_lock_try_acquire
+                0x00000000        0x4 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+ .text.__retarget_lock_try_acquire_recursive
+                0x00000000        0x4 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+ .text.__retarget_lock_release
+                0x00000000        0x4 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+ .text.__retarget_lock_release_recursive
+                0x00000000        0x4 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+ .bss.__lock___arc4random_mutex
+                0x00000000        0x1 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+ .bss.__lock___dd_hash_mutex
+                0x00000000        0x1 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+ .bss.__lock___tz_mutex
+                0x00000000        0x1 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+ .bss.__lock___env_recursive_mutex
+                0x00000000        0x1 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+ .bss.__lock___malloc_recursive_mutex
+                0x00000000        0x1 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+ .bss.__lock___at_quick_exit_mutex
+                0x00000000        0x1 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+ .bss.__lock___atexit_recursive_mutex
+                0x00000000        0x1 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+ .bss.__lock___sfp_recursive_mutex
+                0x00000000        0x1 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+ .debug_frame   0x00000000       0xb0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+ .ARM.attributes
+                0x00000000       0x34 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+ .text          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fclose.o)
+ .data          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fclose.o)
+ .bss           0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fclose.o)
+ .text._fclose_r
+                0x00000000       0xc4 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fclose.o)
+ .text.fclose   0x00000000       0x10 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fclose.o)
+ .debug_frame   0x00000000       0x3c D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fclose.o)
+ .ARM.attributes
+                0x00000000       0x34 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fclose.o)
+ .text          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fflush.o)
+ .data          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fflush.o)
+ .bss           0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fflush.o)
+ .text.__sflush_r
+                0x00000000      0x134 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fflush.o)
+ .text._fflush_r
+                0x00000000       0x70 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fflush.o)
+ .text.fflush   0x00000000       0x90 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fflush.o)
+ .debug_frame   0x00000000       0x84 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fflush.o)
+ .ARM.attributes
+                0x00000000       0x34 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fflush.o)
+ .text          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_cos.o)
+ .data          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_cos.o)
+ .bss           0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_cos.o)
+ .text          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_sin.o)
+ .data          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_sin.o)
+ .bss           0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_sin.o)
+ .text          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-kf_cos.o)
+ .data          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-kf_cos.o)
+ .bss           0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-kf_cos.o)
+ .text          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-kf_sin.o)
+ .data          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-kf_sin.o)
+ .bss           0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-kf_sin.o)
+ .text          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_rem_pio2.o)
+ .data          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_rem_pio2.o)
+ .bss           0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_rem_pio2.o)
+ .text          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_fabs.o)
+ .data          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_fabs.o)
+ .bss           0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_fabs.o)
+ .text          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-kf_rem_pio2.o)
+ .data          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-kf_rem_pio2.o)
+ .bss           0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-kf_rem_pio2.o)
+ .text          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_scalbn.o)
+ .data          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_scalbn.o)
+ .bss           0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_scalbn.o)
+ .text          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_floor.o)
+ .data          0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_floor.o)
+ .bss           0x00000000        0x0 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_floor.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD CMakeFiles\playdate-quest_DEVICE.dir\src\draw_style.c.obj
+LOAD CMakeFiles\playdate-quest_DEVICE.dir\src\globals.c.obj
+LOAD CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+LOAD CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+LOAD CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+LOAD CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+LOAD CMakeFiles\playdate-quest_DEVICE.dir\src\util\adjacency_generator.c.obj
+LOAD CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+LOAD CMakeFiles\playdate-quest_DEVICE.dir\src\util\radixsort.c.obj
+LOAD CMakeFiles\playdate-quest_DEVICE.dir\src\util\image_loader.c.obj
+LOAD CMakeFiles\playdate-quest_DEVICE.dir\src\util\wav_ima_adpcm.c.obj
+LOAD CMakeFiles\playdate-quest_DEVICE.dir\D_\Playdate\PlaydateSDK\C_API\buildsupport\setup.c.obj
+START GROUP
+LOAD D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a
+LOAD D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a
+END GROUP
+START GROUP
+LOAD D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a
+LOAD D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a
+LOAD D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a
+END GROUP
+
+.text           0x00000000     0x36ec
+ *(.text)
+ *(.text.*)
+ .text.tri_edge_init
+                0x00000000      0x17c CMakeFiles\playdate-quest_DEVICE.dir\src\draw_style.c.obj
+ *fill*         0x0000017c        0x4 
+ .text.draw_tri_pattern
+                0x00000180      0x4c8 CMakeFiles\playdate-quest_DEVICE.dir\src\draw_style.c.obj
+                0x00000180                draw_tri_pattern
+ *fill*         0x00000648        0x8 
+ .text.draw_tri_bluenoise
+                0x00000650      0x3cc CMakeFiles\playdate-quest_DEVICE.dir\src\draw_style.c.obj
+                0x00000650                draw_tri_bluenoise
+ *fill*         0x00000a1c        0x4 
+ .text.app_initialize
+                0x00000a20       0x80 CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+                0x00000a20                app_initialize
+ .text.app_update
+                0x00000aa0      0x1c8 CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+                0x00000aa0                app_update
+ *fill*         0x00000c68        0x8 
+ .text.v3_tri_normal
+                0x00000c70       0x80 CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+                0x00000c70                v3_tri_normal
+ .text.xform_transform_pt
+                0x00000cf0       0x68 CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+                0x00000cf0                xform_transform_pt
+ *fill*         0x00000d58        0x8 
+ .text.xform_look_at
+                0x00000d60      0x160 CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+                0x00000d60                xform_look_at
+ .text.xform_invert
+                0x00000ec0       0x94 CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+                0x00000ec0                xform_invert
+ *fill*         0x00000f54        0xc 
+ .text.eventUpdate
+                0x00000f60        0xc CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ *fill*         0x00000f6c        0x4 
+ .text.plat_malloc
+                0x00000f70       0x14 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                0x00000f70                plat_malloc
+ *fill*         0x00000f84        0xc 
+ .text.plat_calloc
+                0x00000f90       0x28 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                0x00000f90                plat_calloc
+ *fill*         0x00000fb8        0x8 
+ .text.plat_realloc
+                0x00000fc0       0x10 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                0x00000fc0                plat_realloc
+ .text.plat_free
+                0x00000fd0       0x14 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                0x00000fd0                plat_free
+ *fill*         0x00000fe4        0xc 
+ .text.plat_gfx_clear
+                0x00000ff0       0x10 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                0x00000ff0                plat_gfx_clear
+ .text.plat_gfx_get_frame
+                0x00001000       0x10 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                0x00001000                plat_gfx_get_frame
+ .text.plat_gfx_mark_updated_rows
+                0x00001010       0x10 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                0x00001010                plat_gfx_mark_updated_rows
+ .text.plat_file_open_read
+                0x00001020       0x10 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                0x00001020                plat_file_open_read
+ .text.plat_file_read
+                0x00001030       0x10 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                0x00001030                plat_file_read
+ .text.plat_file_seek_cur
+                0x00001040       0x10 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                0x00001040                plat_file_seek_cur
+ .text.plat_file_close
+                0x00001050       0x10 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                0x00001050                plat_file_close
+ .text.plat_sys_log_error
+                0x00001060       0x28 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                0x00001060                plat_sys_log_error
+ *fill*         0x00001088        0x8 
+ .text.plat_sound_update
+                0x00001090        0x4 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                0x00001090                plat_sound_update
+ *fill*         0x00001094        0xc 
+ .text.plat_time_get
+                0x000010a0       0x10 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                0x000010a0                plat_time_get
+ .text.plat_input_get_buttons
+                0x000010b0       0x3c CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                0x000010b0                plat_input_get_buttons
+ *fill*         0x000010ec        0x4 
+ .text.plat_input_get_crank_angle_rad
+                0x000010f0       0x20 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                0x000010f0                plat_input_get_crank_angle_rad
+ .text.plat_input_get_crank_delta_angle_rad
+                0x00001110       0x20 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                0x00001110                plat_input_get_crank_delta_angle_rad
+ .text.eventHandler
+                0x00001130       0x70 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                0x00001130                eventHandler
+ .text.draw_black_fragment.part.0
+                0x000011a0       0xd4 CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+ *fill*         0x00001274        0xc 
+ .text.mesh_free.part.0
+                0x00001280       0x34 CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+ *fill*         0x000012b4        0xc 
+ .text.draw_black_line
+                0x000012c0      0x174 CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+ *fill*         0x00001434        0xc 
+ .text.scene_setLight
+                0x00001440       0x38 CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+                0x00001440                scene_setLight
+ *fill*         0x00001478        0x8 
+ .text.scene_setCamera
+                0x00001480       0xbc CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+                0x00001480                scene_setCamera
+ *fill*         0x0000153c        0x4 
+ .text.scene_init
+                0x00001540       0x70 CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+                0x00001540                scene_init
+ .text.scene_add_mesh
+                0x000015b0       0x68 CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+                0x000015b0                scene_add_mesh
+ *fill*         0x00001618        0x8 
+ .text.scene_draw
+                0x00001620      0x974 CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+                0x00001620                scene_draw
+ *fill*         0x00001f94        0xc 
+ .text.mesh_load_from_file
+                0x00001fa0      0x14c CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+                0x00001fa0                mesh_load_from_file
+ *fill*         0x000020ec        0x4 
+ .text.mesh_instance_init
+                0x000020f0       0x40 CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+                0x000020f0                mesh_instance_init
+ .text.generate_adjacency_buffer
+                0x00002130      0x1b4 CMakeFiles\playdate-quest_DEVICE.dir\src\util\adjacency_generator.c.obj
+                0x00002130                generate_adjacency_buffer
+ *fill*         0x000022e4        0xc 
+ .text.get_blue_noise_buffer
+                0x000022f0        0xc CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+                0x000022f0                get_blue_noise_buffer
+ *fill*         0x000022fc        0x4 
+ .text.init_pixel_ops
+                0x00002300       0x5c CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+                0x00002300                init_pixel_ops
+ *fill*         0x0000235c        0x4 
+ .text.radixsort_upper16keys
+                0x00002360       0xe4 CMakeFiles\playdate-quest_DEVICE.dir\src\util\radixsort.c.obj
+                0x00002360                radixsort_upper16keys
+ *fill*         0x00002444        0xc 
+ .text.read_tga_file_grayscale
+                0x00002450       0x98 CMakeFiles\playdate-quest_DEVICE.dir\src\util\image_loader.c.obj
+                0x00002450                read_tga_file_grayscale
+ *fill*         0x000024e8        0x8 
+ .text.eventHandlerShim
+                0x000024f0       0x20 CMakeFiles\playdate-quest_DEVICE.dir\D_\Playdate\PlaydateSDK\C_API\buildsupport\setup.c.obj
+                0x000024f0                eventHandlerShim
+ .text.memset   0x00002510       0x88 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-memset.o)
+                0x00002510                memset
+ .text.cosf     0x00002598       0x70 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_cos.o)
+                0x00002598                cosf
+ .text.sinf     0x00002608       0x74 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_sin.o)
+                0x00002608                sinf
+ .text.__kernel_cosf
+                0x0000267c      0x104 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-kf_cos.o)
+                0x0000267c                __kernel_cosf
+ .text.__kernel_sinf
+                0x00002780       0x90 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-kf_sin.o)
+                0x00002780                __kernel_sinf
+ .text.__ieee754_rem_pio2f
+                0x00002810      0x26c D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_rem_pio2.o)
+                0x00002810                __ieee754_rem_pio2f
+ .text.fabsf    0x00002a7c       0x10 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_fabs.o)
+                0x00002a7c                fabsf
+ .text.__kernel_rem_pio2f
+                0x00002a8c      0x694 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-kf_rem_pio2.o)
+                0x00002a8c                __kernel_rem_pio2f
+ .text.scalbnf  0x00003120       0xdc D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_scalbn.o)
+                0x00003120                scalbnf
+ .text.floorf   0x000031fc       0x94 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_floor.o)
+                0x000031fc                floorf
+ *(.init)
+ *(.fini)
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+ *(.rodata*)
+ .rodata.app_initialize.str1.4
+                0x00003290       0x7a CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+                                 0x2c (size before relaxing)
+ .rodata.eventHandler.str1.4
+                0x0000330a        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                                 0x3f (size before relaxing)
+ *fill*         0x0000330a        0x2 
+ .rodata.next.0
+                0x0000330c       0x10 CMakeFiles\playdate-quest_DEVICE.dir\src\util\adjacency_generator.c.obj
+ .rodata.init_pixel_ops.str1.4
+                0x0000331c        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+                                  0xe (size before relaxing)
+ .rodata.npio2_hw
+                0x0000331c       0x80 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_rem_pio2.o)
+ .rodata.two_over_pi
+                0x0000339c      0x318 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_rem_pio2.o)
+ .rodata.PIo2   0x000036b4       0x2c D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-kf_rem_pio2.o)
+ .rodata.init_jk
+                0x000036e0        0xc D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-kf_rem_pio2.o)
+ *(.eh_frame*)
+
+.glue_7         0x000036ec        0x0
+ .glue_7        0x000036ec        0x0 linker stubs
+
+.glue_7t        0x000036ec        0x0
+ .glue_7t       0x000036ec        0x0 linker stubs
+
+.vfp11_veneer   0x000036ec        0x0
+ .vfp11_veneer  0x000036ec        0x0 linker stubs
+
+.v4_bx          0x000036ec        0x0
+ .v4_bx         0x000036ec        0x0 linker stubs
+
+.iplt           0x000036ec        0x0
+ .iplt          0x000036ec        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\draw_style.c.obj
+
+.rel.dyn        0x000036ec        0x0
+ .rel.iplt      0x000036ec        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\draw_style.c.obj
+
+.data           0x000036ec      0x140
+                0x000036ec                        __etext = .
+                0x000036ec                        __data_start__ = .
+ *(vtable)
+ *(.data*)
+ .data.s_cam_dist
+                0x000036ec        0x4 CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+ .data.s_cam_angle
+                0x000036f0        0x4 CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+ .data.xform_identity
+                0x000036f4       0x30 CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+                0x000036f4                xform_identity
+ .data.patterns
+                0x00003724      0x108 CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+                0x0000382c                        . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end = .)
+                0x0000382c                        . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__init_array_start = .)
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array)
+                [!provide]                        PROVIDE (__init_array_end = .)
+                0x0000382c                        . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(SORT_BY_NAME(.fini_array.*))
+ *(.fini_array)
+                [!provide]                        PROVIDE (__fini_array_end = .)
+                0x0000382c                        . = ALIGN (0x4)
+                0x0000382c                        __data_end__ = .
+
+.igot.plt       0x0000382c        0x0
+ .igot.plt      0x0000382c        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\draw_style.c.obj
+
+.bss            0x0000382c    0x1d608
+                0x0000382c                        . = ALIGN (0x4)
+                0x0000382c                        __bss_start__ = .
+ *(.bss*)
+ .bss.G         0x0000382c       0x30 CMakeFiles\playdate-quest_DEVICE.dir\src\globals.c.obj
+                0x0000382c                G
+ .bss.s_draw_bluenoise
+                0x0000385c        0x1 CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+ *fill*         0x0000385d        0x3 
+ .bss.s_house_inst
+                0x00003860       0x44 CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+ .bss.s_house   0x000038a4        0x4 CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+ .bss.s_scene   0x000038a8       0xbc CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+ .bss.s_pd      0x00003964        0x4 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .bss.s_font    0x00003968        0x4 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .bss.g_screen_buffer_2x2sml
+                0x0000396c     0x5dc0 CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+                0x0000396c                g_screen_buffer_2x2sml
+ .bss.g_screen_buffer
+                0x0000972c    0x17700 CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+                0x0000972c                g_screen_buffer
+ .bss.s_blue_noise
+                0x00020e2c        0x4 CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+ .bss.pdrealloc
+                0x00020e30        0x4 CMakeFiles\playdate-quest_DEVICE.dir\D_\Playdate\PlaydateSDK\C_API\buildsupport\setup.c.obj
+ *(COMMON)
+ *(COM)
+                0x00020e34                        . = ALIGN (0x4)
+                0x00020e34                        __bss_end__ = .
+
+/DISCARD/
+ *(.ARM.exidx)
+OUTPUT(playdate-quest_DEVICE.elf elf32-littlearm)
+LOAD linker stubs
+
+.debug_info     0x00000000    0x185ae
+ .debug_info    0x00000000     0x333b CMakeFiles\playdate-quest_DEVICE.dir\src\draw_style.c.obj
+ .debug_info    0x0000333b      0x190 CMakeFiles\playdate-quest_DEVICE.dir\src\globals.c.obj
+ .debug_info    0x000034cb      0xc45 CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+ .debug_info    0x00004110      0xab6 CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+ .debug_info    0x00004bc6     0x7e77 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .debug_info    0x0000ca3d     0x2b54 CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+ .debug_info    0x0000f591      0x5ec CMakeFiles\playdate-quest_DEVICE.dir\src\util\adjacency_generator.c.obj
+ .debug_info    0x0000fb7d      0xa57 CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+ .debug_info    0x000105d4      0x52c CMakeFiles\playdate-quest_DEVICE.dir\src\util\radixsort.c.obj
+ .debug_info    0x00010b00      0x3ad CMakeFiles\playdate-quest_DEVICE.dir\src\util\image_loader.c.obj
+ .debug_info    0x00010ead     0x7701 CMakeFiles\playdate-quest_DEVICE.dir\D_\Playdate\PlaydateSDK\C_API\buildsupport\setup.c.obj
+
+.debug_abbrev   0x00000000     0x2048
+ .debug_abbrev  0x00000000      0x3e3 CMakeFiles\playdate-quest_DEVICE.dir\src\draw_style.c.obj
+ .debug_abbrev  0x000003e3       0x93 CMakeFiles\playdate-quest_DEVICE.dir\src\globals.c.obj
+ .debug_abbrev  0x00000476      0x2b8 CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+ .debug_abbrev  0x0000072e      0x276 CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+ .debug_abbrev  0x000009a4      0x5cc CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .debug_abbrev  0x00000f70      0x5e5 CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+ .debug_abbrev  0x00001555      0x20c CMakeFiles\playdate-quest_DEVICE.dir\src\util\adjacency_generator.c.obj
+ .debug_abbrev  0x00001761      0x299 CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+ .debug_abbrev  0x000019fa      0x1c9 CMakeFiles\playdate-quest_DEVICE.dir\src\util\radixsort.c.obj
+ .debug_abbrev  0x00001bc3      0x16b CMakeFiles\playdate-quest_DEVICE.dir\src\util\image_loader.c.obj
+ .debug_abbrev  0x00001d2e      0x31a CMakeFiles\playdate-quest_DEVICE.dir\D_\Playdate\PlaydateSDK\C_API\buildsupport\setup.c.obj
+
+.debug_loc      0x00000000     0xc317
+ .debug_loc     0x00000000     0x5844 CMakeFiles\playdate-quest_DEVICE.dir\src\draw_style.c.obj
+ .debug_loc     0x00005844      0x2cc CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+ .debug_loc     0x00005b10     0x1052 CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+ .debug_loc     0x00006b62      0xf30 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .debug_loc     0x00007a92     0x2e1c CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+ .debug_loc     0x0000a8ae      0x709 CMakeFiles\playdate-quest_DEVICE.dir\src\util\adjacency_generator.c.obj
+ .debug_loc     0x0000afb7      0xa93 CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+ .debug_loc     0x0000ba4a      0x442 CMakeFiles\playdate-quest_DEVICE.dir\src\util\radixsort.c.obj
+ .debug_loc     0x0000be8c      0x221 CMakeFiles\playdate-quest_DEVICE.dir\src\util\image_loader.c.obj
+ .debug_loc     0x0000c0ad      0x26a CMakeFiles\playdate-quest_DEVICE.dir\D_\Playdate\PlaydateSDK\C_API\buildsupport\setup.c.obj
+
+.debug_aranges  0x00000000      0x3b8
+ .debug_aranges
+                0x00000000       0x48 CMakeFiles\playdate-quest_DEVICE.dir\src\draw_style.c.obj
+ .debug_aranges
+                0x00000048       0x18 CMakeFiles\playdate-quest_DEVICE.dir\src\globals.c.obj
+ .debug_aranges
+                0x00000060       0x28 CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+ .debug_aranges
+                0x00000088       0x68 CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+ .debug_aranges
+                0x000000f0      0x150 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .debug_aranges
+                0x00000240       0x90 CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+ .debug_aranges
+                0x000002d0       0x20 CMakeFiles\playdate-quest_DEVICE.dir\src\util\adjacency_generator.c.obj
+ .debug_aranges
+                0x000002f0       0x50 CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+ .debug_aranges
+                0x00000340       0x20 CMakeFiles\playdate-quest_DEVICE.dir\src\util\radixsort.c.obj
+ .debug_aranges
+                0x00000360       0x20 CMakeFiles\playdate-quest_DEVICE.dir\src\util\image_loader.c.obj
+ .debug_aranges
+                0x00000380       0x38 CMakeFiles\playdate-quest_DEVICE.dir\D_\Playdate\PlaydateSDK\C_API\buildsupport\setup.c.obj
+
+.debug_ranges   0x00000000     0x1e60
+ .debug_ranges  0x00000000      0xe40 CMakeFiles\playdate-quest_DEVICE.dir\src\draw_style.c.obj
+ .debug_ranges  0x00000e40       0x80 CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+ .debug_ranges  0x00000ec0      0x298 CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+ .debug_ranges  0x00001158      0x1f0 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .debug_ranges  0x00001348      0x700 CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+ .debug_ranges  0x00001a48      0x1f8 CMakeFiles\playdate-quest_DEVICE.dir\src\util\adjacency_generator.c.obj
+ .debug_ranges  0x00001c40      0x120 CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+ .debug_ranges  0x00001d60       0xc8 CMakeFiles\playdate-quest_DEVICE.dir\src\util\radixsort.c.obj
+ .debug_ranges  0x00001e28       0x10 CMakeFiles\playdate-quest_DEVICE.dir\src\util\image_loader.c.obj
+ .debug_ranges  0x00001e38       0x28 CMakeFiles\playdate-quest_DEVICE.dir\D_\Playdate\PlaydateSDK\C_API\buildsupport\setup.c.obj
+
+.debug_line     0x00000000     0x65ef
+ .debug_line    0x00000000     0x22d8 CMakeFiles\playdate-quest_DEVICE.dir\src\draw_style.c.obj
+ .debug_line    0x000022d8      0x100 CMakeFiles\playdate-quest_DEVICE.dir\src\globals.c.obj
+ .debug_line    0x000023d8      0x457 CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+ .debug_line    0x0000282f      0x805 CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+ .debug_line    0x00003034      0xad7 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .debug_line    0x00003b0b     0x171e CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+ .debug_line    0x00005229      0x4f9 CMakeFiles\playdate-quest_DEVICE.dir\src\util\adjacency_generator.c.obj
+ .debug_line    0x00005722      0x609 CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+ .debug_line    0x00005d2b      0x317 CMakeFiles\playdate-quest_DEVICE.dir\src\util\radixsort.c.obj
+ .debug_line    0x00006042      0x254 CMakeFiles\playdate-quest_DEVICE.dir\src\util\image_loader.c.obj
+ .debug_line    0x00006296      0x359 CMakeFiles\playdate-quest_DEVICE.dir\D_\Playdate\PlaydateSDK\C_API\buildsupport\setup.c.obj
+
+.debug_str      0x00000000     0x4c34
+ .debug_str     0x00000000     0x4c34 CMakeFiles\playdate-quest_DEVICE.dir\src\draw_style.c.obj
+                                0x8f3 (size before relaxing)
+ .debug_str     0x00004c34        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\globals.c.obj
+                                0x2c7 (size before relaxing)
+ .debug_str     0x00004c34        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+                                0x7f0 (size before relaxing)
+ .debug_str     0x00004c34        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+                                0x33b (size before relaxing)
+ .debug_str     0x00004c34        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                               0x384c (size before relaxing)
+ .debug_str     0x00004c34        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+                                0xa3f (size before relaxing)
+ .debug_str     0x00004c34        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\util\adjacency_generator.c.obj
+                                0x34b (size before relaxing)
+ .debug_str     0x00004c34        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+                                0x4a6 (size before relaxing)
+ .debug_str     0x00004c34        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\util\radixsort.c.obj
+                                0x2e6 (size before relaxing)
+ .debug_str     0x00004c34        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\util\image_loader.c.obj
+                                0x36f (size before relaxing)
+ .debug_str     0x00004c34        0x0 CMakeFiles\playdate-quest_DEVICE.dir\D_\Playdate\PlaydateSDK\C_API\buildsupport\setup.c.obj
+                               0x36f1 (size before relaxing)
+
+.comment        0x00000000       0x46
+ .comment       0x00000000       0x46 CMakeFiles\playdate-quest_DEVICE.dir\src\draw_style.c.obj
+                                 0x47 (size before relaxing)
+ .comment       0x00000046        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\globals.c.obj
+                                 0x47 (size before relaxing)
+ .comment       0x00000046        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+                                 0x47 (size before relaxing)
+ .comment       0x00000046        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+                                 0x47 (size before relaxing)
+ .comment       0x00000046        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                                 0x47 (size before relaxing)
+ .comment       0x00000046        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+                                 0x47 (size before relaxing)
+ .comment       0x00000046        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\util\adjacency_generator.c.obj
+                                 0x47 (size before relaxing)
+ .comment       0x00000046        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+                                 0x47 (size before relaxing)
+ .comment       0x00000046        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\util\radixsort.c.obj
+                                 0x47 (size before relaxing)
+ .comment       0x00000046        0x0 CMakeFiles\playdate-quest_DEVICE.dir\src\util\image_loader.c.obj
+                                 0x47 (size before relaxing)
+ .comment       0x00000046        0x0 CMakeFiles\playdate-quest_DEVICE.dir\D_\Playdate\PlaydateSDK\C_API\buildsupport\setup.c.obj
+                                 0x47 (size before relaxing)
+
+.ARM.attributes
+                0x00000000       0x34
+ .ARM.attributes
+                0x00000000       0x30 CMakeFiles\playdate-quest_DEVICE.dir\src\draw_style.c.obj
+ .ARM.attributes
+                0x00000030       0x30 CMakeFiles\playdate-quest_DEVICE.dir\src\globals.c.obj
+ .ARM.attributes
+                0x00000060       0x30 CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+ .ARM.attributes
+                0x00000090       0x30 CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+ .ARM.attributes
+                0x000000c0       0x30 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .ARM.attributes
+                0x000000f0       0x30 CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+ .ARM.attributes
+                0x00000120       0x30 CMakeFiles\playdate-quest_DEVICE.dir\src\util\adjacency_generator.c.obj
+ .ARM.attributes
+                0x00000150       0x30 CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+ .ARM.attributes
+                0x00000180       0x30 CMakeFiles\playdate-quest_DEVICE.dir\src\util\radixsort.c.obj
+ .ARM.attributes
+                0x000001b0       0x30 CMakeFiles\playdate-quest_DEVICE.dir\src\util\image_loader.c.obj
+ .ARM.attributes
+                0x000001e0       0x30 CMakeFiles\playdate-quest_DEVICE.dir\D_\Playdate\PlaydateSDK\C_API\buildsupport\setup.c.obj
+ .ARM.attributes
+                0x00000210       0x34 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-memset.o)
+ .ARM.attributes
+                0x00000244       0x34 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_cos.o)
+ .ARM.attributes
+                0x00000278       0x34 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_sin.o)
+ .ARM.attributes
+                0x000002ac       0x34 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-kf_cos.o)
+ .ARM.attributes
+                0x000002e0       0x34 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-kf_sin.o)
+ .ARM.attributes
+                0x00000314       0x34 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_rem_pio2.o)
+ .ARM.attributes
+                0x00000348       0x34 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_fabs.o)
+ .ARM.attributes
+                0x0000037c       0x34 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-kf_rem_pio2.o)
+ .ARM.attributes
+                0x000003b0       0x34 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_scalbn.o)
+ .ARM.attributes
+                0x000003e4       0x34 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_floor.o)
+
+.debug_frame    0x00000000      0xc6c
+ .debug_frame   0x00000000      0x140 CMakeFiles\playdate-quest_DEVICE.dir\src\draw_style.c.obj
+ .debug_frame   0x00000140       0x70 CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+ .debug_frame   0x000001b0      0x10c CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+ .debug_frame   0x000002bc      0x380 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+ .debug_frame   0x0000063c      0x240 CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+ .debug_frame   0x0000087c       0x4c CMakeFiles\playdate-quest_DEVICE.dir\src\util\adjacency_generator.c.obj
+ .debug_frame   0x000008c8      0x108 CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+ .debug_frame   0x000009d0       0x40 CMakeFiles\playdate-quest_DEVICE.dir\src\util\radixsort.c.obj
+ .debug_frame   0x00000a10       0x38 CMakeFiles\playdate-quest_DEVICE.dir\src\util\image_loader.c.obj
+ .debug_frame   0x00000a48       0x5c CMakeFiles\playdate-quest_DEVICE.dir\D_\Playdate\PlaydateSDK\C_API\buildsupport\setup.c.obj
+ .debug_frame   0x00000aa4       0x2c D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-memset.o)
+ .debug_frame   0x00000ad0       0x34 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_cos.o)
+ .debug_frame   0x00000b04       0x34 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_sin.o)
+ .debug_frame   0x00000b38       0x20 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-kf_cos.o)
+ .debug_frame   0x00000b58       0x20 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-kf_sin.o)
+ .debug_frame   0x00000b78       0x38 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_rem_pio2.o)
+ .debug_frame   0x00000bb0       0x20 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_fabs.o)
+ .debug_frame   0x00000bd0       0x5c D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-kf_rem_pio2.o)
+ .debug_frame   0x00000c2c       0x20 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_scalbn.o)
+ .debug_frame   0x00000c4c       0x20 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_floor.o)
+
+Cross Reference Table
+
+Symbol                                            File
+G                                                 CMakeFiles\playdate-quest_DEVICE.dir\src\globals.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+__adddf3                                          D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__aeabi_dadd                                      D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__aeabi_drsub                                     D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__aeabi_dsub                                      D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__aeabi_f2d                                       D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+__aeabi_i2d                                       D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__aeabi_idiv0                                     D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
+__aeabi_l2d                                       D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__aeabi_ldiv0                                     D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_dvmd_tls.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+__aeabi_ui2d                                      D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__aeabi_ul2d                                      D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__aeabi_uldivmod                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\util\wav_ima_adpcm.c.obj
+__extendsfdf2                                     D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__floatdidf                                       D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__floatsidf                                       D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__floatundidf                                     D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__floatunsidf                                     D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__fp_lock_all                                     D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+__fp_unlock_all                                   D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+__ieee754_rem_pio2f                               D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_rem_pio2.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_sin.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_cos.o)
+__kernel_cosf                                     D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-kf_cos.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_sin.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_cos.o)
+__kernel_rem_pio2f                                D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-kf_rem_pio2.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_rem_pio2.o)
+__kernel_sinf                                     D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-kf_sin.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_sin.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_cos.o)
+__lock___arc4random_mutex                         D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+__lock___at_quick_exit_mutex                      D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+__lock___atexit_recursive_mutex                   D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+__lock___dd_hash_mutex                            D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+__lock___env_recursive_mutex                      D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+__lock___malloc_recursive_mutex                   D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+__lock___sfp_recursive_mutex                      D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+__lock___tz_mutex                                 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+__retarget_lock_acquire                           D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+__retarget_lock_acquire_recursive                 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fflush.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fclose.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+__retarget_lock_close                             D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+__retarget_lock_close_recursive                   D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fclose.o)
+__retarget_lock_init                              D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+__retarget_lock_init_recursive                    D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+__retarget_lock_release                           D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+__retarget_lock_release_recursive                 D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fflush.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fclose.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+__retarget_lock_try_acquire                       D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+__retarget_lock_try_acquire_recursive             D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lock.o)
+__sclose                                          D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-stdio.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+__seofread                                        D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-stdio.o)
+__sf                                              D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-impure.o)
+__sflush_r                                        D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fflush.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fclose.o)
+__sfp                                             D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+__sfp_lock_acquire                                D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fclose.o)
+__sfp_lock_release                                D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fclose.o)
+__sglue                                           D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fflush.o)
+__sinit                                           D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fflush.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fclose.o)
+__sread                                           D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-stdio.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+__sseek                                           D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-stdio.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+__stdio_exit_handler                              D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+__subdf3                                          D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
+__swrite                                          D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-stdio.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+__udivmoddi4                                      D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+_close                                            D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-closer.o)
+_close_r                                          D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-closer.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-stdio.o)
+_fclose_r                                         D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fclose.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+_fflush_r                                         D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fflush.o)
+_free_r                                           CMakeFiles\playdate-quest_DEVICE.dir\D_\Playdate\PlaydateSDK\C_API\buildsupport\setup.c.obj
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fflush.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fclose.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-reent.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-malloc.o)
+_fwalk_sglue                                      D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fwalk.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fflush.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+_impure_data                                      D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-impure.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fflush.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+_impure_ptr                                       D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-impure.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fflush.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fclose.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-reent.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-malloc.o)
+_lseek                                            D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lseekr.o)
+_lseek_r                                          D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lseekr.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-stdio.o)
+_malloc_r                                         CMakeFiles\playdate-quest_DEVICE.dir\D_\Playdate\PlaydateSDK\C_API\buildsupport\setup.c.obj
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-malloc.o)
+_read                                             D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-readr.o)
+_read_r                                           D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-readr.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-stdio.o)
+_realloc_r                                        CMakeFiles\playdate-quest_DEVICE.dir\D_\Playdate\PlaydateSDK\C_API\buildsupport\setup.c.obj
+_reclaim_reent                                    D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-reent.o)
+_write                                            D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-writer.o)
+_write_r                                          D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-writer.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-stdio.o)
+app_initialize                                    CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+app_update                                        CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+clear_screen_buffers                              CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+cosf                                              D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_cos.o)
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+draw_dithered_scanline                            CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+draw_dithered_screen                              CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+draw_dithered_screen_2x2                          CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+draw_line                                         CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+draw_tri_bluenoise                                CMakeFiles\playdate-quest_DEVICE.dir\src\draw_style.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+draw_tri_checker                                  CMakeFiles\playdate-quest_DEVICE.dir\src\draw_style.c.obj
+draw_tri_pattern                                  CMakeFiles\playdate-quest_DEVICE.dir\src\draw_style.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+errno                                             D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-reent.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-writer.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-readr.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-lseekr.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-closer.o)
+eventHandler                                      CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\D_\Playdate\PlaydateSDK\C_API\buildsupport\setup.c.obj
+eventHandlerShim                                  CMakeFiles\playdate-quest_DEVICE.dir\D_\Playdate\PlaydateSDK\C_API\buildsupport\setup.c.obj
+fabsf                                             D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_fabs.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-ef_rem_pio2.o)
+fclose                                            D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fclose.o)
+fflush                                            D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-fflush.o)
+floorf                                            D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_floor.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-kf_rem_pio2.o)
+free                                              D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-malloc.o)
+g_order_pattern_2x2                               CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+g_order_pattern_3x2                               CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+g_order_pattern_4x2                               CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+g_order_pattern_4x3                               CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+g_order_pattern_4x4                               CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+g_screen_buffer                                   CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+g_screen_buffer_2x2sml                            CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+generate_adjacency_buffer                         CMakeFiles\playdate-quest_DEVICE.dir\src\util\adjacency_generator.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+get_blue_noise_buffer                             CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\draw_style.c.obj
+init_pixel_ops                                    CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+malloc                                            D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-malloc.o)
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\util\wav_ima_adpcm.c.obj
+memset                                            D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-memset.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc.a(libc_a-findfp.o)
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\util\radixsort.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\util\adjacency_generator.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+mesh_create                                       CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+mesh_free                                         CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+mesh_instance_init                                CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+mesh_load_from_file                               CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+plat_calloc                                       CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+plat_file_close                                   CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\util\image_loader.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+plat_file_get_size                                CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+plat_file_open_read                               CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\util\image_loader.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+plat_file_open_write                              CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+plat_file_read                                    CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\util\image_loader.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+plat_file_seek_cur                                CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\util\image_loader.c.obj
+plat_file_write                                   CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+plat_free                                         CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\util\image_loader.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\util\adjacency_generator.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+plat_gfx_begin_stats                              CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+plat_gfx_clear                                    CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+plat_gfx_draw_bitmap                              CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+plat_gfx_draw_stats                               CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+plat_gfx_get_bitmap_size                          CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+plat_gfx_get_debug_frame                          CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+plat_gfx_get_frame                                CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+plat_gfx_load_bitmap                              CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+plat_gfx_mark_updated_rows                        CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+plat_input_get_buttons                            CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+plat_input_get_crank_angle_rad                    CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+plat_input_get_crank_delta_angle_rad              CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+plat_malloc                                       CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\util\image_loader.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\util\adjacency_generator.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+plat_realloc                                      CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+plat_sound_free                                   CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+plat_sound_get_length                             CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+plat_sound_get_time                               CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+plat_sound_get_volume                             CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+plat_sound_is_playing                             CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+plat_sound_open_file                              CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+plat_sound_play                                   CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+plat_sound_set_time                               CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+plat_sound_set_volume                             CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+plat_sound_stop                                   CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+plat_sound_update                                 CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+plat_sys_log_error                                CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+plat_time_get                                     CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+plat_time_reset                                   CMakeFiles\playdate-quest_DEVICE.dir\src\platform.c.obj
+radixsort_upper16keys                             CMakeFiles\playdate-quest_DEVICE.dir\src\util\radixsort.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+read_tga_file_grayscale                           CMakeFiles\playdate-quest_DEVICE.dir\src\util\image_loader.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+s_dither2x2_g                                     CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+s_dither2x2_r                                     CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+s_dither4x4_g                                     CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+s_dither4x4_r                                     CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
+scalbnf                                           D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_scalbn.o)
+                                                  D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-kf_rem_pio2.o)
+scene_add_line                                    CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+scene_add_mesh                                    CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+scene_draw                                        CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+scene_init                                        CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+scene_setCamera                                   CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+scene_setCenter                                   CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+scene_setLight                                    CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+scene_shutdown                                    CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+sinf                                              D:/Playdate/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a(libm_a-sf_sin.o)
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\main.c.obj
+v3_tri_normal                                     CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+wav_decode_state_init                             CMakeFiles\playdate-quest_DEVICE.dir\src\util\wav_ima_adpcm.c.obj
+wav_ima_adpcm_decode                              CMakeFiles\playdate-quest_DEVICE.dir\src\util\wav_ima_adpcm.c.obj
+wav_parse_header                                  CMakeFiles\playdate-quest_DEVICE.dir\src\util\wav_ima_adpcm.c.obj
+xform_axes                                        CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+xform_get_determinant                             CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+xform_identity                                    CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+xform_invert                                      CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+xform_look_at                                     CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj
+xform_make                                        CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+xform_make_axis_angle                             CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+xform_make_translate                              CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+xform_multiply                                    CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+xform_transform_pt                                CMakeFiles\playdate-quest_DEVICE.dir\src\mathlib.c.obj
+                                                  CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.obj

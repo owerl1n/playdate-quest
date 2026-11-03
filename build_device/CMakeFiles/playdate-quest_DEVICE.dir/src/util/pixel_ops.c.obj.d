@@ -1,0 +1,35 @@
+CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj: \
+ D:\Playdate\PlaydateSDK\Examples\playdate-quest\src\util\pixel_ops.c \
+ D:\Playdate\PlaydateSDK\Examples\playdate-quest\src\util\pixel_ops.h \
+ D:/Playdate/arm-gnu-toolchain/lib/gcc/arm-none-eabi/15.3.1/include/stdint.h \
+ D:/Playdate/arm-gnu-toolchain/arm-none-eabi/include/stdint.h \
+ D:/Playdate/arm-gnu-toolchain/arm-none-eabi/include/machine/_default_types.h \
+ D:/Playdate/arm-gnu-toolchain/arm-none-eabi/include/sys/features.h \
+ D:/Playdate/arm-gnu-toolchain/arm-none-eabi/include/_newlib_version.h \
+ D:/Playdate/arm-gnu-toolchain/arm-none-eabi/include/sys/_intsup.h \
+ D:/Playdate/arm-gnu-toolchain/arm-none-eabi/include/sys/_stdint.h \
+ D:\Playdate\PlaydateSDK\Examples\playdate-quest\src\util\image_loader.h \
+ D:/Playdate/PlaydateSDK/Examples/playdate-quest/src/globals.h \
+ D:/Playdate/arm-gnu-toolchain/lib/gcc/arm-none-eabi/15.3.1/include/stddef.h \
+ D:/Playdate/arm-gnu-toolchain/lib/gcc/arm-none-eabi/15.3.1/include/stdbool.h \
+ D:/Playdate/PlaydateSDK/Examples/playdate-quest/src/mathlib.h \
+ D:/Playdate/arm-gnu-toolchain/arm-none-eabi/include/math.h \
+ D:/Playdate/arm-gnu-toolchain/arm-none-eabi/include/sys/reent.h \
+ D:/Playdate/arm-gnu-toolchain/arm-none-eabi/include/_ansi.h \
+ D:/Playdate/arm-gnu-toolchain/arm-none-eabi/include/newlib.h \
+ D:/Playdate/arm-gnu-toolchain/arm-none-eabi/include/sys/config.h \
+ D:/Playdate/arm-gnu-toolchain/arm-none-eabi/include/machine/ieeefp.h \
+ D:/Playdate/arm-gnu-toolchain/arm-none-eabi/include/sys/cdefs.h \
+ D:/Playdate/arm-gnu-toolchain/arm-none-eabi/include/sys/_types.h \
+ D:/Playdate/arm-gnu-toolchain/arm-none-eabi/include/machine/_types.h \
+ D:/Playdate/arm-gnu-toolchain/arm-none-eabi/include/sys/lock.h \
+ D:/Playdate/arm-gnu-toolchain/arm-none-eabi/include/_ansi.h \
+ D:/Playdate/arm-gnu-toolchain/arm-none-eabi/include/machine/fastmath.h \
+ D:/Playdate/PlaydateSDK/Examples/playdate-quest/src/platform.h \
+ D:/Playdate/arm-gnu-toolchain/arm-none-eabi/include/string.h \
+ D:/Playdate/arm-gnu-toolchain/arm-none-eabi/include/sys/_locale.h \
+ D:/Playdate/arm-gnu-toolchain/arm-none-eabi/include/strings.h \
+ D:/Playdate/arm-gnu-toolchain/arm-none-eabi/include/sys/string.h \
+ D:/Playdate/arm-gnu-toolchain/arm-none-eabi/include/stdlib.h \
+ D:/Playdate/arm-gnu-toolchain/arm-none-eabi/include/machine/stdlib.h \
+ D:/Playdate/arm-gnu-toolchain/arm-none-eabi/include/alloca.h

@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/Playdate/PlaydateSDK/Examples/playdate-quest/build_sim/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
