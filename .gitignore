@@ -1,13 +1,9 @@
-﻿/build/*
-/build_dev/*
-.vs/*
-.vscode/
-/*.pdx
-pdex.dll
-pdex.elf
-.DS_Store
-emsdk/
-/out
-*.blend1
-.venv
-__pycache__
+﻿# Папки со сборками (CMakePresets.json кладёт всё в build/<имя пресета>)
+build/
+out/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+
+# Папка с ресурсами игры (house.pdm, BlueNoise.tga и т.д.)
+Source/
