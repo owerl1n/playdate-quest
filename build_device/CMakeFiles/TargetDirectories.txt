@@ -1,3 +1,0 @@
-D:/Playdate/PlaydateSDK/Examples/playdate-quest/build_device/CMakeFiles/playdate-quest_DEVICE.dir
-D:/Playdate/PlaydateSDK/Examples/playdate-quest/build_device/CMakeFiles/edit_cache.dir
-D:/Playdate/PlaydateSDK/Examples/playdate-quest/build_device/CMakeFiles/rebuild_cache.dir
