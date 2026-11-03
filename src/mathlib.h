@@ -1,0 +1,363 @@
+// SPDX-License-Identifier: Unlicense
+
+#pragma once
+
+#include <stdint.h>
+#include <stdbool.h>
+#include <math.h>
+
+// Coordinate conventions are: +X right, +Y up, +Z forward (i.e. matches Unity; Y up, left handed)
+
+
+#if defined(_MSC_VER)
+#  define FORCE_INLINE static __forceinline
+#else
+#  define FORCE_INLINE static inline __attribute__((always_inline)) __attribute__((__unused__))
+#endif
+
+
+#if TARGET_PLAYDATE
+static inline float _lib3d_sqrtf(float x)
+{
+	float result;
+	asm ("vsqrt.f32 %0, %1" : "=t"(result) : "t"(x));
+	return result;
+}
+#define sqrtf(f) _lib3d_sqrtf(f)
+#endif
+
+static inline uint32_t swap(uint32_t n)
+{
+#if TARGET_PLAYDATE
+	//return __REV(n);
+	uint32_t result;
+	__asm volatile ("rev %0, %1" : "=l" (result) : "l" (n));
+	return(result);
+#else
+	return ((n & 0xff000000) >> 24) | ((n & 0xff0000) >> 8) | ((n & 0xff00) << 8) | (n << 24);
+#endif
+}
+
+static inline int highest_bit(uint32_t x)
+{
+	if (x == 0)
+		return -1;
+#if _MSC_VER
+	unsigned long res = 0;
+	_BitScanReverse(&res, x);
+	return (int)res;
+#elif __clang__ || __GNUC__ || __GCC__
+	return 31 - __builtin_clz(x);
+#else
+#error Unknown platform
+#endif
+}
+
+static inline uint16_t float_to_half(float x)
+{
+#if TARGET_PLAYDATE
+	union { float f; uint32_t u; } bits;
+	asm("vcvtb.f16.f32 %0, %1" : "=t"(bits.f) : "t"(x));
+	return bits.u;
+#else
+	// Based on float_to_half_fast3_rtne from https://gist.github.com/rygorous/2156668
+	typedef union FP32
+	{
+		uint32_t u;
+		float f;
+	} FP32;
+
+	FP32 f32infty = { 255 << 23 };
+	FP32 f16max = { (127 + 16) << 23 };
+	FP32 denorm_magic = { ((127 - 15) + (23 - 10) + 1) << 23 };
+	uint32_t sign_mask = 0x80000000u;
+	uint16_t o = { 0 };
+
+	FP32 f;
+	f.f = x;
+	uint32_t sign = f.u & sign_mask;
+	f.u ^= sign;
+
+	// NOTE all the integer compares in this function can be safely
+	// compiled into signed compares since all operands are below
+	// 0x80000000. Important if you want fast straight SSE2 code
+	// (since there's no unsigned PCMPGTD).
+
+	if (f.u >= f16max.u) // result is Inf or NaN (all exponent bits set)
+		o = (f.u > f32infty.u) ? 0x7e00 : 0x7c00; // NaN->qNaN and Inf->Inf
+	else // (De)normalized number or zero
+	{
+		if (f.u < (113 << 23)) // resulting FP16 is subnormal or zero
+		{
+			// use a magic value to align our 10 mantissa bits at the bottom of
+			// the float. as long as FP addition is round-to-nearest-even this
+			// just works.
+			f.f += denorm_magic.f;
+
+			// and one integer subtract of the bias later, we have our final float!
+			o = f.u - denorm_magic.u;
+		}
+		else
+		{
+			uint32_t mant_odd = (f.u >> 13) & 1; // resulting mantissa is odd
+
+			// update exponent, rounding bias part 1
+			f.u += ((uint32_t)(15 - 127) << 23) + 0xfff;
+			// rounding bias part 2
+			f.u += mant_odd;
+			// take the bits!
+			o = f.u >> 13;
+		}
+	}
+
+	o |= sign >> 16;
+	return o;
+#endif
+}
+
+static inline uint32_t float_to_half_topbits(float x)
+{
+#if TARGET_PLAYDATE
+	union { float f; uint32_t u; } bits;
+	asm("vcvtt.f16.f32 %0, %1" : "=t"(bits.f) : "t"(x));
+	return bits.u;
+#else
+	return (uint32_t)float_to_half(x) << 16;
+#endif
+}
+
+// https://en.wikipedia.org/wiki/Fast_inverse_square_root
+inline float fast_rsqrt(float x)
+{
+	union {
+		float f;
+		uint32_t u;
+	} fu;
+	fu.f = x;
+	fu.u = 0x5f3759df - (fu.u >> 1);
+	fu.f *= 1.5f - (x * 0.5f * fu.f * fu.f);
+	return fu.f;
+}
+inline float fast_rcp(float x) { x = fast_rsqrt(x); return x * x; }
+inline float fast_div(float x, float y) { return x * fast_rsqrt(y); }
+inline float fast_sqrt(float x) { return x * fast_rsqrt(x); }
+
+static inline int min2(int a, int b)
+{
+	return a < b ? a : b;
+}
+
+static inline int max2(int a, int b)
+{
+	return a > b ? a : b;
+}
+
+static inline float min2f(float a, float b)
+{
+	return a < b ? a : b;
+}
+
+static inline float max2f(float a, float b)
+{
+	return a > b ? a : b;
+}
+
+static inline int min3(int a, int b, int c)
+{
+	return (a < b) ? ((a < c) ? a : c) : ((b < c) ? b : c);
+}
+
+static inline int max3(int a, int b, int c)
+{
+	return (a > b) ? ((a > c) ? a : c) : ((b > c) ? b : c);
+}
+
+static inline int clamp_i(int v, int a, int b)
+{
+	if (v < a) v = a;
+	if (v > b) v = b;
+	return v;
+}
+
+static inline float clamp_f(float v, float a, float b)
+{
+	if (v < a) v = a;
+	if (v > b) v = b;
+	return v;
+}
+
+#define M_PIf (3.14159265f)
+
+static inline float saturate(float v)
+{
+	if (v < 0.0f)
+		v = 0.0f;
+	if (v > 1.0f)
+		v = 1.0f;
+	return v;
+}
+
+static inline float fract(float v)
+{
+	return v - floorf(v);
+}
+
+// https://gist.github.com/volkansalma/2972237?permalink_comment_id=3872525#gistcomment-3872525
+static inline float atan2f_approx(float y, float x)
+{
+	float absy = fabsf(y) + 1.0e-8f; // avoid 0/0
+	float r = (x - copysignf(absy, x)) / (absy + fabsf(x));
+	float a = M_PIf * 0.5f - copysignf(M_PIf * 0.25f, x);
+	a += (0.1963f * r * r - 0.9817f) * r;
+	return copysignf(a, y);
+}
+
+static inline float lerp(float a, float b, float t)
+{
+	return a * (1.0f - t) + b * t;
+}
+
+static inline float smoothstep(float a, float b, float v)
+{
+	float t = (v - a) / (b - a);
+	if (t < 0.0f) t = 0.0f;
+	if (t > 1.0f) t = 1.0f;
+	return t * t * (3.0f - 2.0f * t);
+}
+
+static inline float invlerp(float a, float b, float v)
+{
+	float t = (v - a) / (b - a);
+	if (t < 0.0f) t = 0.0f;
+	if (t > 1.0f) t = 1.0f;
+	return t;
+}
+
+static inline uint32_t XorShift32(uint32_t* state)
+{
+	uint32_t x = *state;
+	x ^= x << 13;
+	x ^= x >> 17;
+	x ^= x << 15;
+	*state = x;
+	return x;
+}
+
+static inline float RandomFloat01(uint32_t* state)
+{
+	return (XorShift32(state) & 0xFFFFFF) / 16777216.0f;
+}
+
+typedef struct float2
+{
+	float x;
+	float y;
+} float2;
+
+typedef struct float3
+{
+	float x;
+	float y;
+	float z;
+} float3;
+
+static inline float3 f3(float x, float y, float z)
+{
+	return (float3) {.x=x, .y=y, .z=z };
+}
+
+static inline float3 v3_cross(float3 a, float3 b)
+{
+	return f3(a.y * b.z - a.z * b.y, a.z * b.x - a.x * b.z, a.x * b.y - a.y * b.x);
+}
+
+static inline float v3_dot(float3 a, float3 b)
+{
+	return a.x * b.x + a.y * b.y + a.z * b.z;
+}
+
+static inline float3 v3_normalize(float3 v)
+{
+	float d = sqrtf(v.x * v.x + v.y * v.y + v.z * v.z);
+	float id = 1.0f / d;
+	float3 r = { v.x * id, v.y * id, v.z * id };
+	return r;
+}
+
+static inline float3 v3_neg(float3 v)
+{
+	return f3(-v.x, -v.y, -v.z);
+}
+
+static inline float v3_lensq(float3 v)
+{
+	return v.x * v.x + v.y * v.y + v.z * v.z;
+}
+
+static inline float v3_len(float3 v)
+{
+	return sqrtf(v3_lensq(v));
+}
+
+static inline float3 v3_add(float3 a, float3 v)
+{
+	return f3(a.x + v.x, a.y + v.y, a.z + v.z);
+}
+static inline float3 v3_sub(float3 a, float3 v)
+{
+	return f3(a.x - v.x, a.y - v.y, a.z - v.z);
+}
+static inline float3 v3_subfl(float3 a, float v)
+{
+	return f3(a.x - v, a.y - v, a.z - v);
+}
+static inline float3 v3_mul(float3 a, float3 b)
+{
+	return f3(a.x * b.x, a.y * b.y, a.z * b.z);
+}
+static inline float3 v3_mulfl(float3 v, float s)
+{
+	return f3(v.x*s, v.y*s, v.z*s);
+}
+static inline float3 v3_lerp(float3 a, float3 b, float f)
+{
+	float ff = 1.0f - f;
+	float3 r = f3(a.x*ff + b.x*f, a.y*ff + b.y*f, a.z*ff + b.z*f);
+	return r;
+}
+
+static inline float3 v3_fract(float3 v)
+{
+	float3 r = { fract(v.x), fract(v.y), fract(v.z) };
+	return r;
+}
+
+static inline float3 v3_abs(float3 v)
+{
+	float3 r = { fabsf(v.x), fabsf(v.y), fabsf(v.z) };
+	return r;
+}
+
+static inline float3 v3_reflect(float3 v, float3 n)
+{
+	return v3_sub(v, v3_mulfl(n, 2 * v3_dot(v, n)));
+}
+
+float3 v3_tri_normal(const float3* p1, const float3* p2, const float3* p3);
+
+typedef struct xform
+{
+	float3 pos;
+	float3 ax, ay, az;
+} xform;
+extern xform xform_identity;
+xform xform_make(float xx, float xy, float xz, float yx, float yy, float yz, float zx, float zy, float zz);
+xform xform_axes(float3 x, float3 y, float3 z, float3 pos);
+xform xform_make_translate(float dx, float dy, float dz);
+xform xform_make_axis_angle(float angle, float3 axis);
+// transforms multiply right to left, i.e. `r` is child transform, followed by `l` parent transform
+xform xform_multiply(const xform* l, const xform* r);
+float3 xform_transform_pt(const xform* m, float3 p);
+float xform_get_determinant(xform* m);
+xform xform_look_at(float3 pos, float3 target, float3 up);
+xform xform_invert(const xform* m);
