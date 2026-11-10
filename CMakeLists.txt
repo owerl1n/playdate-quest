@@ -172,8 +172,12 @@ else()
 		COMMAND ${CMAKE_COMMAND} -E copy
 
 		${CMAKE_CURRENT_SOURCE_DIR}/Source/BlueNoise.tga
-
-		${CMAKE_CURRENT_SOURCE_DIR}/Source/house.pdm
+		${CMAKE_CURRENT_SOURCE_DIR}/Source/cabinet.pdm
+		${CMAKE_CURRENT_SOURCE_DIR}/Source/legs.pdm
+		${CMAKE_CURRENT_SOURCE_DIR}/Source/drawer1.pdm
+		${CMAKE_CURRENT_SOURCE_DIR}/Source/drawer2.pdm
+		${CMAKE_CURRENT_SOURCE_DIR}/Source/drawer3.pdm
+		${CMAKE_CURRENT_SOURCE_DIR}/Source/lid.pdm
 
         $<TARGET_FILE_DIR:${PLAYDATE_GAME_NAME}>/${DATA_DIR}
 	)

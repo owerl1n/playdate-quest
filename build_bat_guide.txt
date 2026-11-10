@@ -1,0 +1,7 @@
+open cmd in corresponding folder
+use build.bat + command
+
+build.bat builds ----the device and simulator in turn. The device comes first, then the simulator, because it packages the .pdx file.
+build.bat device ----builds only the device.
+build.bat sim 	 ----builds only the simulator.
+build.bat clean  ----deletes both build folders and builds everything from scratch. This is necessary if CMake starts acting weird

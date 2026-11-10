@@ -143,7 +143,13 @@ void plat_file_close(PlatFile* file)
 
 static void plat_sys_log_error_impl(const char* fmt, va_list args)
 {
-	s_pd->system->error(fmt, args);
+	char* buf = NULL;
+	s_pd->system->vaFormatString(&buf, fmt, args); // форматирование средствами SDK, без libc
+	if (buf)
+	{
+		s_pd->system->logToConsole("%s", buf);     // пишет в консоль и не останавливает игру
+		plat_free(buf);
+	}
 }
 
 void plat_sys_log_error(const char* fmt, ...)
