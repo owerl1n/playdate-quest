@@ -147,6 +147,7 @@ void scene_shutdown(Scene* scene)
 	plat_free(scene->tmp_inst_order_table1);
 	plat_free(scene->tmp_inst_order_table2);
 	plat_free(scene->line_buf);
+	plat_free(scene->tmp_vis_tris_mask);
 }
 
 void scene_setLight(Scene* scene, float3 light)
@@ -209,31 +210,24 @@ static Pattern patterns[] =
 	{ 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff }
 };
 
-static void draw_triangle(uint8_t* bitmap, int rowstride, const float3* p1, const float3* p2, const float3* p3, const float brightness, enum MeshDrawFlags draw_flags, const uint8_t wire_flags, enum SceneDrawFlags scene_draw_flags)
+static void draw_triangle(uint8_t* bitmap, int rowstride, const float3* p1, const float3* p2, const float3* p3, const float brightness, enum MeshDrawFlags draw_flags, const uint8_t wire_flags)
 {
 	if (draw_flags & MeshDrawFlag_Solid)
 	{
-		if ((scene_draw_flags & SceneDrawFlag_DitherBluenoise) == 0)
-		{
-			// dither pattern
-			int pat_idx = clamp_i((int)(brightness * 32.99f), 0, 32);
-			const uint8_t* pattern = (const uint8_t*)&patterns[pat_idx];
-			draw_tri_pattern(bitmap, rowstride, p1, p2, p3, pattern);
-		}
-		else
-		{
-			// blue noise
-			int color = clamp_i((int)(brightness * 255.0f), 0, 255);
-			draw_tri_bluenoise(bitmap, rowstride, p1, p2, p3, color);
-		}
+		int pat_idx = clamp_i((int)(brightness * 32.99f), 0, 32);
+		const uint8_t* pattern = (const uint8_t*)&patterns[pat_idx];
+		draw_tri_pattern_z(bitmap, rowstride, p1, p2, p3, pattern, s_zscale);
 	}
 	//@TODO: draw_tri_checker via some flag/option
 
 	if (draw_flags & (MeshDrawFlag_Wire | MeshDrawFlag_SilhouetteWire))
 	{
-		if (wire_flags & 1) draw_black_line(bitmap, rowstride, p1, p2);
-		if (wire_flags & 2) draw_black_line(bitmap, rowstride, p2, p3);
-		if (wire_flags & 4) draw_black_line(bitmap, rowstride, p3, p1);
+		if (wire_flags & 1)
+			draw_line_z(bitmap, rowstride, p1, p2, s_zscale);
+		if (wire_flags & 2)
+			draw_line_z(bitmap, rowstride, p2, p3, s_zscale);
+		if (wire_flags & 4)
+			draw_line_z(bitmap, rowstride, p3, p1, s_zscale);
 	}
 }
 
@@ -260,7 +254,7 @@ static bool is_face_visible(const Scene* scene, uint16_t fi)
 	return (fi != 0xFFFF) && (scene->tmp_vis_tris_mask[fi >> 5] & (1 << (fi & 31)));
 }
 
-static void draw_mesh_instance(Scene* scene, uint8_t* buffer, int rowstride, const MeshInstance* inst, enum SceneDrawFlags scene_draw_flags)
+static void draw_mesh_instance(Scene* scene, uint8_t* buffer, int rowstride, const MeshInstance* inst)
 {
 	Mesh* mesh = inst->mesh;
 	if (!mesh)
@@ -446,7 +440,7 @@ static void draw_mesh_instance(Scene* scene, uint8_t* buffer, int rowstride, con
 			if (mesh->wire_flags)
 				wire_flag = mesh->wire_flags[fi];
 		}
-		draw_triangle(buffer, rowstride, &scene->tmp_proj_points[idx0], &scene->tmp_proj_points[idx2], &scene->tmp_proj_points[idx1], brightness, inst->flags, wire_flag, scene_draw_flags);
+		draw_triangle(buffer, rowstride, &scene->tmp_proj_points[idx0], &scene->tmp_proj_points[idx2], &scene->tmp_proj_points[idx1], brightness, inst->flags, wire_flag);
 	}
 }
 
@@ -475,9 +469,13 @@ void scene_add_line(Scene* scene, float3 a, float3 b)
 	scene->line_count += 2;
 }
 
+static float s_zscale;
 
-void scene_draw(Scene* scene, uint8_t* buffer, int rowstride, enum SceneDrawFlags draw_flags)
+void scene_draw(Scene* scene, uint8_t* buffer, int rowstride)
 {
+	zbuf_clear();
+	s_zscale = 60000.0f * scene->z_near;
+
 	scene->stats_visible_tris = 0;
 
 	// sort objects by distance
@@ -500,7 +498,7 @@ void scene_draw(Scene* scene, uint8_t* buffer, int rowstride, enum SceneDrawFlag
 	{
 		uint16_t index = scene->tmp_inst_order_table1[i] & 0xFFFF;
 		const MeshInstance* inst = scene->instances[index];
-		draw_mesh_instance(scene, buffer, rowstride, inst, draw_flags);
+		draw_mesh_instance(scene, buffer, rowstride, inst);
 	}
 
 	// draw loose lines
@@ -517,7 +515,7 @@ void scene_draw(Scene* scene, uint8_t* buffer, int rowstride, enum SceneDrawFlag
 			view_a.y = view_a.y * scene_scale / view_a.z + proj_add_y;
 			view_b.x = view_b.x * scene_scale / view_b.z + proj_add_x;
 			view_b.y = view_b.y * scene_scale / view_b.z + proj_add_y;
-			draw_black_line(buffer, rowstride, &view_a, &view_b);
+			draw_line_z(buffer, rowstride, &view_a, &view_b, s_zscale);
 		}
 	}
 	scene->line_count = 0; // clear lines each frame

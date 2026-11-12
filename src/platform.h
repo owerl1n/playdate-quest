@@ -73,3 +73,5 @@ void* plat_malloc(size_t size);
 void* plat_calloc(size_t size);
 void* plat_realloc(void* ptr, size_t size);
 void plat_free(void* ptr);
+
+void plat_gfx_draw_text(const char* text, int x, int y);

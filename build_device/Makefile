@@ -153,6 +153,54 @@ D_\Playdate\PlaydateSDK\C_API\buildsupport\setup.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\playdate-quest_DEVICE.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\playdate-quest_DEVICE.dir\D_\Playdate\PlaydateSDK\C_API\buildsupport\setup.c.s
 .PHONY : D_\Playdate\PlaydateSDK\C_API\buildsupport\setup.c.s
 
+src\app\frame.obj: src\app\frame.c.obj
+.PHONY : src\app\frame.obj
+
+# target to build an object file
+src\app\frame.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\playdate-quest_DEVICE.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\playdate-quest_DEVICE.dir\src\app\frame.c.obj
+.PHONY : src\app\frame.c.obj
+
+src\app\frame.i: src\app\frame.c.i
+.PHONY : src\app\frame.i
+
+# target to preprocess a source file
+src\app\frame.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\playdate-quest_DEVICE.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\playdate-quest_DEVICE.dir\src\app\frame.c.i
+.PHONY : src\app\frame.c.i
+
+src\app\frame.s: src\app\frame.c.s
+.PHONY : src\app\frame.s
+
+# target to generate assembly for a file
+src\app\frame.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\playdate-quest_DEVICE.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\playdate-quest_DEVICE.dir\src\app\frame.c.s
+.PHONY : src\app\frame.c.s
+
+src\app\scene_manager.obj: src\app\scene_manager.c.obj
+.PHONY : src\app\scene_manager.obj
+
+# target to build an object file
+src\app\scene_manager.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\playdate-quest_DEVICE.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\playdate-quest_DEVICE.dir\src\app\scene_manager.c.obj
+.PHONY : src\app\scene_manager.c.obj
+
+src\app\scene_manager.i: src\app\scene_manager.c.i
+.PHONY : src\app\scene_manager.i
+
+# target to preprocess a source file
+src\app\scene_manager.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\playdate-quest_DEVICE.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\playdate-quest_DEVICE.dir\src\app\scene_manager.c.i
+.PHONY : src\app\scene_manager.c.i
+
+src\app\scene_manager.s: src\app\scene_manager.c.s
+.PHONY : src\app\scene_manager.s
+
+# target to generate assembly for a file
+src\app\scene_manager.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\playdate-quest_DEVICE.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\playdate-quest_DEVICE.dir\src\app\scene_manager.c.s
+.PHONY : src\app\scene_manager.c.s
+
 src\draw_style.obj: src\draw_style.c.obj
 .PHONY : src\draw_style.obj
 
@@ -297,6 +345,54 @@ src\render.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\playdate-quest_DEVICE.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\playdate-quest_DEVICE.dir\src\render.c.s
 .PHONY : src\render.c.s
 
+src\scenes\cabinet\cabinet_scene.obj: src\scenes\cabinet\cabinet_scene.c.obj
+.PHONY : src\scenes\cabinet\cabinet_scene.obj
+
+# target to build an object file
+src\scenes\cabinet\cabinet_scene.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\playdate-quest_DEVICE.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\playdate-quest_DEVICE.dir\src\scenes\cabinet\cabinet_scene.c.obj
+.PHONY : src\scenes\cabinet\cabinet_scene.c.obj
+
+src\scenes\cabinet\cabinet_scene.i: src\scenes\cabinet\cabinet_scene.c.i
+.PHONY : src\scenes\cabinet\cabinet_scene.i
+
+# target to preprocess a source file
+src\scenes\cabinet\cabinet_scene.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\playdate-quest_DEVICE.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\playdate-quest_DEVICE.dir\src\scenes\cabinet\cabinet_scene.c.i
+.PHONY : src\scenes\cabinet\cabinet_scene.c.i
+
+src\scenes\cabinet\cabinet_scene.s: src\scenes\cabinet\cabinet_scene.c.s
+.PHONY : src\scenes\cabinet\cabinet_scene.s
+
+# target to generate assembly for a file
+src\scenes\cabinet\cabinet_scene.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\playdate-quest_DEVICE.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\playdate-quest_DEVICE.dir\src\scenes\cabinet\cabinet_scene.c.s
+.PHONY : src\scenes\cabinet\cabinet_scene.c.s
+
+src\scenes\menu\menu_scene.obj: src\scenes\menu\menu_scene.c.obj
+.PHONY : src\scenes\menu\menu_scene.obj
+
+# target to build an object file
+src\scenes\menu\menu_scene.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\playdate-quest_DEVICE.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\playdate-quest_DEVICE.dir\src\scenes\menu\menu_scene.c.obj
+.PHONY : src\scenes\menu\menu_scene.c.obj
+
+src\scenes\menu\menu_scene.i: src\scenes\menu\menu_scene.c.i
+.PHONY : src\scenes\menu\menu_scene.i
+
+# target to preprocess a source file
+src\scenes\menu\menu_scene.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\playdate-quest_DEVICE.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\playdate-quest_DEVICE.dir\src\scenes\menu\menu_scene.c.i
+.PHONY : src\scenes\menu\menu_scene.c.i
+
+src\scenes\menu\menu_scene.s: src\scenes\menu\menu_scene.c.s
+.PHONY : src\scenes\menu\menu_scene.s
+
+# target to generate assembly for a file
+src\scenes\menu\menu_scene.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\playdate-quest_DEVICE.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\playdate-quest_DEVICE.dir\src\scenes\menu\menu_scene.c.s
+.PHONY : src\scenes\menu\menu_scene.c.s
+
 src\util\adjacency_generator.obj: src\util\adjacency_generator.c.obj
 .PHONY : src\util\adjacency_generator.obj
 
@@ -320,54 +416,6 @@ src\util\adjacency_generator.s: src\util\adjacency_generator.c.s
 src\util\adjacency_generator.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\playdate-quest_DEVICE.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\playdate-quest_DEVICE.dir\src\util\adjacency_generator.c.s
 .PHONY : src\util\adjacency_generator.c.s
-
-src\util\image_loader.obj: src\util\image_loader.c.obj
-.PHONY : src\util\image_loader.obj
-
-# target to build an object file
-src\util\image_loader.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\playdate-quest_DEVICE.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\playdate-quest_DEVICE.dir\src\util\image_loader.c.obj
-.PHONY : src\util\image_loader.c.obj
-
-src\util\image_loader.i: src\util\image_loader.c.i
-.PHONY : src\util\image_loader.i
-
-# target to preprocess a source file
-src\util\image_loader.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\playdate-quest_DEVICE.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\playdate-quest_DEVICE.dir\src\util\image_loader.c.i
-.PHONY : src\util\image_loader.c.i
-
-src\util\image_loader.s: src\util\image_loader.c.s
-.PHONY : src\util\image_loader.s
-
-# target to generate assembly for a file
-src\util\image_loader.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\playdate-quest_DEVICE.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\playdate-quest_DEVICE.dir\src\util\image_loader.c.s
-.PHONY : src\util\image_loader.c.s
-
-src\util\pixel_ops.obj: src\util\pixel_ops.c.obj
-.PHONY : src\util\pixel_ops.obj
-
-# target to build an object file
-src\util\pixel_ops.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\playdate-quest_DEVICE.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.obj
-.PHONY : src\util\pixel_ops.c.obj
-
-src\util\pixel_ops.i: src\util\pixel_ops.c.i
-.PHONY : src\util\pixel_ops.i
-
-# target to preprocess a source file
-src\util\pixel_ops.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\playdate-quest_DEVICE.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.i
-.PHONY : src\util\pixel_ops.c.i
-
-src\util\pixel_ops.s: src\util\pixel_ops.c.s
-.PHONY : src\util\pixel_ops.s
-
-# target to generate assembly for a file
-src\util\pixel_ops.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\playdate-quest_DEVICE.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\playdate-quest_DEVICE.dir\src\util\pixel_ops.c.s
-.PHONY : src\util\pixel_ops.c.s
 
 src\util\radixsort.obj: src\util\radixsort.c.obj
 .PHONY : src\util\radixsort.obj
@@ -429,6 +477,12 @@ help:
 	@echo ... D_/Playdate/PlaydateSDK/C_API/buildsupport/setup.obj
 	@echo ... D_/Playdate/PlaydateSDK/C_API/buildsupport/setup.i
 	@echo ... D_/Playdate/PlaydateSDK/C_API/buildsupport/setup.s
+	@echo ... src/app/frame.obj
+	@echo ... src/app/frame.i
+	@echo ... src/app/frame.s
+	@echo ... src/app/scene_manager.obj
+	@echo ... src/app/scene_manager.i
+	@echo ... src/app/scene_manager.s
 	@echo ... src/draw_style.obj
 	@echo ... src/draw_style.i
 	@echo ... src/draw_style.s
@@ -447,15 +501,15 @@ help:
 	@echo ... src/render.obj
 	@echo ... src/render.i
 	@echo ... src/render.s
+	@echo ... src/scenes/cabinet/cabinet_scene.obj
+	@echo ... src/scenes/cabinet/cabinet_scene.i
+	@echo ... src/scenes/cabinet/cabinet_scene.s
+	@echo ... src/scenes/menu/menu_scene.obj
+	@echo ... src/scenes/menu/menu_scene.i
+	@echo ... src/scenes/menu/menu_scene.s
 	@echo ... src/util/adjacency_generator.obj
 	@echo ... src/util/adjacency_generator.i
 	@echo ... src/util/adjacency_generator.s
-	@echo ... src/util/image_loader.obj
-	@echo ... src/util/image_loader.i
-	@echo ... src/util/image_loader.s
-	@echo ... src/util/pixel_ops.obj
-	@echo ... src/util/pixel_ops.i
-	@echo ... src/util/pixel_ops.s
 	@echo ... src/util/radixsort.obj
 	@echo ... src/util/radixsort.i
 	@echo ... src/util/radixsort.s

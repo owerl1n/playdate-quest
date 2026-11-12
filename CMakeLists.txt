@@ -59,7 +59,6 @@ set (DEMO_SOURCES
 	src/draw_style.h
 	src/globals.c
 	src/globals.h
-	src/main.c
 	src/mathlib.c
 	src/mathlib.h
 	src/platform.c
@@ -69,14 +68,19 @@ set (DEMO_SOURCES
 	src/render.h
 	src/util/adjacency_generator.c
 	src/util/adjacency_generator.h
-	src/util/pixel_ops.c
-	src/util/pixel_ops.h
 	src/util/radixsort.c
 	src/util/radixsort.h
-	src/util/image_loader.c
-	src/util/image_loader.h
 	src/util/wav_ima_adpcm.c
 	src/util/wav_ima_adpcm.h
+
+	src/main.c
+	src/app/scene_manager.c
+	src/app/scene_manager.h
+	src/app/frame.c
+	src/app/frame.h
+	src/scenes/scenes.h
+	src/scenes/menu/menu_scene.c
+	src/scenes/cabinet/cabinet_scene.c
 )
 
 if (TOOLCHAIN STREQUAL "armgcc")
@@ -164,22 +168,9 @@ else()
 
 	add_custom_command(
 		TARGET ${PLAYDATE_GAME_NAME} PRE_LINK
-		COMMAND ${CMAKE_COMMAND} -E make_directory
-		$<TARGET_FILE_DIR:${PLAYDATE_GAME_NAME}>/${DATA_DIR}
-	)
-	add_custom_command(
-		TARGET ${PLAYDATE_GAME_NAME} PRE_LINK
-		COMMAND ${CMAKE_COMMAND} -E copy
-
-		${CMAKE_CURRENT_SOURCE_DIR}/Source/BlueNoise.tga
-		${CMAKE_CURRENT_SOURCE_DIR}/Source/cabinet.pdm
-		${CMAKE_CURRENT_SOURCE_DIR}/Source/legs.pdm
-		${CMAKE_CURRENT_SOURCE_DIR}/Source/drawer1.pdm
-		${CMAKE_CURRENT_SOURCE_DIR}/Source/drawer2.pdm
-		${CMAKE_CURRENT_SOURCE_DIR}/Source/drawer3.pdm
-		${CMAKE_CURRENT_SOURCE_DIR}/Source/lid.pdm
-
-        $<TARGET_FILE_DIR:${PLAYDATE_GAME_NAME}>/${DATA_DIR}
+		COMMAND ${CMAKE_COMMAND} -E copy_directory
+		${CMAKE_CURRENT_SOURCE_DIR}/Source/models
+		$<TARGET_FILE_DIR:${PLAYDATE_GAME_NAME}>/${DATA_DIR}/models
 	)
 
 endif()

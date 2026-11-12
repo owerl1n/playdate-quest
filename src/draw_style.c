@@ -1,6 +1,8 @@
 #include "draw_style.h"
 #include "rasterizer_scanline.h"
-#include "util/pixel_ops.h"
+#include "platform.h"
+#include <string.h>
+#include <math.h>
 
 FORCE_INLINE void _drawMaskPattern(uint32_t* p, uint32_t mask, uint32_t color)
 {
@@ -79,52 +81,6 @@ void draw_tri_pattern(uint8_t* bitmap, int rowstride, const float3* p0, const fl
 	}
 }
 
-FORCE_INLINE void draw_scanline_bluenoise(uint8_t* bitmap, int rowstride, const tri_edge* edge_l, const tri_edge* edge_r, const uint8_t tri_color)
-{
-	int x = max2(0, edge_l->X);
-	int endx = min2(SCREEN_X, edge_r->X);
-	if (endx <= x) return;
-
-	const uint8_t* noise_row = get_blue_noise_buffer() + edge_l->Y * SCREEN_X;
-	uint8_t* row = bitmap + edge_l->Y * rowstride;
-
-	// write out pixels 32 at a time
-	uint32_t mask = 0;
-	uint32_t* p = (uint32_t*)row + x / 32;
-	uint32_t color = 0;
-
-	while (x < endx)
-	{
-		mask |= 0x80000000u >> (x & 31);
-		uint32_t pix = tri_color > noise_row[x] ? 0x80000000 : 0;
-		color |= pix >> (x & 31);
-		x++;
-		if (x % 32 == 0)
-		{
-			_drawMaskPattern(p++, swap(mask), swap(color));
-			mask = 0;
-			color = 0;
-		}
-	}
-	_drawMaskPattern(p, swap(mask), swap(color));
-}
-
-void draw_tri_bluenoise(uint8_t* bitmap, int rowstride, const float3* p0, const float3* p1, const float3* p2, const uint8_t tri_color)
-{
-	raster_scanline_simple_t tri;
-	raster_scanline_simple_begin(&tri, p0, p1, p2);
-
-	int height = raster_scanline_simple_begin1(&tri);
-	while (height--) {
-		draw_scanline_bluenoise(bitmap, rowstride, tri.e_left, tri.e_right, tri_color);
-		raster_scanline_simple_y_step(&tri);
-	}
-	height = raster_scanline_simple_begin2(&tri);
-	while (height--) {
-		draw_scanline_bluenoise(bitmap, rowstride, tri.e_left, tri.e_right, tri_color);
-		raster_scanline_simple_y_step(&tri);
-	}
-}
 
 // --------------------------------------------------------------------------
 // Simple pure black/white checkerboard
@@ -245,5 +201,93 @@ void draw_tri_checker(uint8_t* bitmap, int rowstride, const float3* p0, const fl
 	while (height--) {
 		draw_scanline_checker(bitmap, rowstride, &tri.grad, tri.e_left, tri.e_right);
 		raster_scanline_uv_y_step(&tri);
+	}
+}
+
+static uint16_t* s_zbuf;
+
+void zbuf_init(void) { s_zbuf = (uint16_t*)plat_malloc(SCREEN_X * SCREEN_Y * sizeof(uint16_t)); }
+void zbuf_clear(void) { memset(s_zbuf, 0, SCREEN_X * SCREEN_Y * sizeof(uint16_t)); }
+
+static void draw_scanline_pattern_z(uint8_t* bitmap, int rowstride, const tri_gradients* grad,
+	const tri_edge_uv* l, const tri_edge_uv* r, const uint8_t* pattern, float zscale)
+{
+	int x = max2(0, l->X);
+	const int endx = min2(SCREEN_X, r->X);
+	if (endx <= x) return;
+	const int y = l->Y;
+
+	const float invz0 = l->invz + (float)(x - l->X) * grad->invz_dx;
+	int32_t Z = (int32_t)(invz0 * zscale * 65536.0f);
+	const int32_t dZ = (int32_t)(grad->invz_dx * zscale * 65536.0f);
+
+	uint16_t* zrow = s_zbuf + y * SCREEN_X;
+	uint32_t* p = (uint32_t*)(bitmap + y * rowstride) + x / 32;
+	const uint32_t color = swap((uint32_t)pattern[y & 7] * 0x01010101u);
+	uint32_t mask = 0;
+
+	for (; x < endx; ++x, Z += dZ)
+	{
+		int32_t zi = Z >> 16;
+		if (zi > 65535) zi = 65535;
+		if (zi < 0) zi = 0;
+		if ((uint16_t)zi > zrow[x])
+		{
+			zrow[x] = (uint16_t)zi;
+			mask |= 0x80000000u >> (x & 31);
+		}
+		if ((x & 31) == 31)
+		{
+			if (mask) _drawMaskPattern(p, swap(mask), color);
+			p++;
+			mask = 0;
+		}
+	}
+	if (mask) _drawMaskPattern(p, swap(mask), color);
+}
+
+void draw_tri_pattern_z(uint8_t* bitmap, int rowstride, const float3* p0, const float3* p1, const float3* p2, const uint8_t* pattern, float zscale)
+{
+	static const float k_zero_uv[6] = {0};
+	raster_scanline_uv_t tri;
+	raster_scanline_uv_begin(&tri, p0, p1, p2, k_zero_uv, 0.0f);
+
+	int height = raster_scanline_uv_begin1(&tri);
+	while (height--) {
+		draw_scanline_pattern_z(bitmap, rowstride, &tri.grad, tri.e_left, tri.e_right, pattern, zscale);
+		raster_scanline_uv_y_step(&tri);
+	}
+	height = raster_scanline_uv_begin2(&tri);
+	while (height--) {
+		draw_scanline_pattern_z(bitmap, rowstride, &tri.grad, tri.e_left, tri.e_right, pattern, zscale);
+		raster_scanline_uv_y_step(&tri);
+	}
+}
+
+// Линия с тестом глубины. Пишет и в z-буфер, чтобы более дальние поверхности, нарисованные позже, её не затёрли.
+void draw_line_z(uint8_t* bitmap, int rowstride, const float3* a, const float3* b, float zscale)
+{
+	if (min2f(a->x, b->x) >= SCREEN_X || max2f(a->x, b->x) < 0 ||
+	    min2f(a->y, b->y) >= SCREEN_Y || max2f(a->y, b->y) < 0)
+		return;
+	const float dx = b->x - a->x, dy = b->y - a->y;
+	int steps = (int)max2f(fabsf(dx), fabsf(dy));
+	if (steps < 1) steps = 1;
+	const float inv = 1.0f / steps;
+	float x = a->x, y = a->y;
+	float z = zscale / a->z;
+	const float sx = dx * inv, sy = dy * inv, sz = (zscale / b->z - z) * inv;
+	for (int i = 0; i <= steps; ++i, x += sx, y += sy, z += sz)
+	{
+		const int ix = (int)x, iy = (int)y;
+		if (x < 0 || y < 0 || ix >= SCREEN_X || iy >= SCREEN_Y) continue;
+		int zi = (int)z;
+		if (zi > 65535) zi = 65535;
+		uint16_t* zp = &s_zbuf[iy * SCREEN_X + ix];
+		if (zi + 40 >= (int)*zp)   // 40 = допуск, чтобы линия на краю грани не пропадала
+		{
+			if (zi > (int)*zp) *zp = (uint16_t)zi;
+			bitmap[iy * rowstride + (ix >> 3)] &= (uint8_t)~(0x80 >> (ix & 7));
+		}
 	}
 }

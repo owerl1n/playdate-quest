@@ -68,6 +68,7 @@ void mesh_instance_init(MeshInstance *inst);
 
 typedef struct Scene
 {
+	float z_near;
 	xform camera_xform;
 	xform view_xform; // inverse of camera xform
 	float3 light; // "towards light" vector in view space
@@ -111,4 +112,4 @@ void scene_setCenter(Scene* scene, float x, float y);
 
 void scene_add_mesh(Scene* scene, const MeshInstance* inst);
 void scene_add_line(Scene* scene, float3 a, float3 b);
-void scene_draw(Scene* scene, uint8_t* buffer, int rowstride, enum SceneDrawFlags draw_flags);
+void scene_draw(Scene* scene, uint8_t* buffer, int rowstride);

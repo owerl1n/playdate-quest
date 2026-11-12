@@ -62,6 +62,12 @@ void plat_gfx_begin_stats()
 	s_frame_beg_time = plat_time_get();
 }
 
+void plat_gfx_draw_text(const char* text, int x, int y)
+{
+	s_pd->graphics->setFont(s_font);
+	s_pd->graphics->drawText(text, strlen(text), kASCIIEncoding, x, y);
+}
+
 void plat_gfx_draw_stats(int par1, int par2)
 {
 	float cur_time = plat_time_get();
@@ -437,6 +443,11 @@ static void draw_text(const char* msg, int bx, int by)
 		}
 		++msg;
 	}
+}
+
+void plat_gfx_draw_text(const char* text, int x, int y)
+{
+	draw_text(text, x, y);
 }
 
 static float s_frame_beg_time = 0.0f;
