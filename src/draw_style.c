@@ -204,33 +204,32 @@ void draw_tri_checker(uint8_t* bitmap, int rowstride, const float3* p0, const fl
 	}
 }
 
-static uint16_t* s_zbuf;
+static uint16_t s_zbuf[SCREEN_X * SCREEN_Y];
 
-void zbuf_init(void) { s_zbuf = (uint16_t*)plat_malloc(SCREEN_X * SCREEN_Y * sizeof(uint16_t)); }
-void zbuf_clear(void) { memset(s_zbuf, 0, SCREEN_X * SCREEN_Y * sizeof(uint16_t)); }
+void zbuf_init(void) { }
+void zbuf_clear(void) { memset(s_zbuf, 0, sizeof(s_zbuf)); }
 
 static void draw_scanline_pattern_z(uint8_t* bitmap, int rowstride, const tri_gradients* grad,
 	const tri_edge_uv* l, const tri_edge_uv* r, const uint8_t* pattern, float zscale)
 {
 	int x = max2(0, l->X);
 	const int endx = min2(SCREEN_X, r->X);
-	if (endx <= x) return;
+	if (endx <= x)
+		return;
 	const int y = l->Y;
 
 	const float invz0 = l->invz + (float)(x - l->X) * grad->invz_dx;
-	int32_t Z = (int32_t)(invz0 * zscale * 65536.0f);
-	const int32_t dZ = (int32_t)(grad->invz_dx * zscale * 65536.0f);
+	float zf = invz0 * zscale;
+	const float dZ = grad->invz_dx * zscale;
 
-	uint16_t* zrow = s_zbuf + y * SCREEN_X;
-	uint32_t* p = (uint32_t*)(bitmap + y * rowstride) + x / 32;
+	uint16_t *zrow = s_zbuf + y * SCREEN_X;
+	uint32_t *p = (uint32_t *)(bitmap + y * rowstride) + x / 32;
 	const uint32_t color = swap((uint32_t)pattern[y & 7] * 0x01010101u);
 	uint32_t mask = 0;
 
-	for (; x < endx; ++x, Z += dZ)
+	for (; x < endx; ++x, zf += dZ)
 	{
-		int32_t zi = Z >> 16;
-		if (zi > 65535) zi = 65535;
-		if (zi < 0) zi = 0;
+		int zi = (int)clamp_f(zf, 0.0f, 65535.0f);
 		if ((uint16_t)zi > zrow[x])
 		{
 			zrow[x] = (uint16_t)zi;
@@ -238,12 +237,14 @@ static void draw_scanline_pattern_z(uint8_t* bitmap, int rowstride, const tri_gr
 		}
 		if ((x & 31) == 31)
 		{
-			if (mask) _drawMaskPattern(p, swap(mask), color);
+			if (mask)
+				_drawMaskPattern(p, swap(mask), color);
 			p++;
 			mask = 0;
 		}
 	}
-	if (mask) _drawMaskPattern(p, swap(mask), color);
+	if (mask)
+		_drawMaskPattern(p, swap(mask), color);
 }
 
 void draw_tri_pattern_z(uint8_t* bitmap, int rowstride, const float3* p0, const float3* p1, const float3* p2, const uint8_t* pattern, float zscale)
@@ -281,7 +282,7 @@ void draw_line_z(uint8_t* bitmap, int rowstride, const float3* a, const float3* 
 	{
 		const int ix = (int)x, iy = (int)y;
 		if (x < 0 || y < 0 || ix >= SCREEN_X || iy >= SCREEN_Y) continue;
-		int zi = (int)z;
+		int zi = (int)clamp_f(z, 0.0f, 65535.0f);
 		if (zi > 65535) zi = 65535;
 		uint16_t* zp = &s_zbuf[iy * SCREEN_X + ix];
 		if (zi + 40 >= (int)*zp)   // 40 = допуск, чтобы линия на краю грани не пропадала

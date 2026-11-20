@@ -168,6 +168,13 @@ else()
 
 	add_custom_command(
 		TARGET ${PLAYDATE_GAME_NAME} PRE_LINK
+		COMMAND ${CMAKE_COMMAND} -E copy_if_different
+		${CMAKE_CURRENT_SOURCE_DIR}/Source/pointer.png
+		$<TARGET_FILE_DIR:${PLAYDATE_GAME_NAME}>/${DATA_DIR}/pointer2.png
+	)
+
+	add_custom_command(
+		TARGET ${PLAYDATE_GAME_NAME} PRE_LINK
 		COMMAND ${CMAKE_COMMAND} -E copy_directory
 		${CMAKE_CURRENT_SOURCE_DIR}/Source/models
 		$<TARGET_FILE_DIR:${PLAYDATE_GAME_NAME}>/${DATA_DIR}/models

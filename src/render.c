@@ -131,6 +131,7 @@ static void draw_black_line(uint8_t* bitmap, int rowstride, const float3* p1, co
 void scene_init(Scene* scene)
 {
 	memset(scene, 0, sizeof(*scene));
+	scene->z_near = 0.1f;
 	scene_setCamera(scene, f3(0, 0, 0), f3(0, 0, 1), 1.0f, f3(0, 1, 0));
 	scene_setLight(scene, f3(0, -1, 0));
 
@@ -209,6 +210,8 @@ static Pattern patterns[] =
 	{ 0xff, 0xf7, 0xff, 0xff, 0xff, 0x7f, 0xff, 0xff },
 	{ 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff }
 };
+
+static float s_zscale;
 
 static void draw_triangle(uint8_t* bitmap, int rowstride, const float3* p1, const float3* p2, const float3* p3, const float brightness, enum MeshDrawFlags draw_flags, const uint8_t wire_flags)
 {
@@ -469,7 +472,7 @@ void scene_add_line(Scene* scene, float3 a, float3 b)
 	scene->line_count += 2;
 }
 
-static float s_zscale;
+
 
 void scene_draw(Scene* scene, uint8_t* buffer, int rowstride)
 {
@@ -522,6 +525,83 @@ void scene_draw(Scene* scene, uint8_t* buffer, int rowstride)
 }
 
 // --------------------------------------------------------------------------
+
+static float3 mesh_vertex_local(const Mesh* mesh, int frame, int i)
+{
+	if (mesh->flags & MeshFlag_FloatVertices)
+		return ((const float3*)mesh->vertices)[frame * mesh->vertex_count + i];
+
+	const uint32_t b = ((const uint32_t*)mesh->vertices)[frame * mesh->vertex_count + i];
+	const float3 ext = v3_sub(mesh->bbox_max, mesh->bbox_min);
+	return f3(mesh->bbox_min.x + (float)(b & 2047) * ext.x * (1.0f / 2047.0f),
+	          mesh->bbox_min.y + (float)((b >> 11) & 1023) * ext.y * (1.0f / 1023.0f),
+	          mesh->bbox_min.z + (float)(b >> 21) * ext.z * (1.0f / 2047.0f));
+}
+
+// Moller-Trumbore, двусторонний
+static bool ray_tri_intersect(float3 o, float3 d, float3 a, float3 b, float3 c, float* out_t)
+{
+	const float3 e1 = v3_sub(b, a);
+	const float3 e2 = v3_sub(c, a);
+	const float3 p = v3_cross(d, e2);
+	const float det = v3_dot(e1, p);
+	if (fabsf(det) < 1.0e-9f)
+		return false;
+	const float inv = 1.0f / det;
+	const float3 s = v3_sub(o, a);
+	const float u = v3_dot(s, p) * inv;
+	if (u < 0.0f || u > 1.0f)
+		return false;
+	const float3 q = v3_cross(s, e1);
+	const float v = v3_dot(d, q) * inv;
+	if (v < 0.0f || u + v > 1.0f)
+		return false;
+	const float t = v3_dot(e2, q) * inv;
+	if (t <= 0.0f)
+		return false;
+	*out_t = t;
+	return true;
+}
+
+const MeshInstance* scene_pick(const Scene* scene, float sx, float sy)
+{
+	// Обратная проекция: точка на экране -> луч в мировом пространстве.
+	// view_xform строился с перевёрнутой осью Y, поэтому берём его инверсию как есть.
+	const float proj_add_x = 1.6666666f * scene->centerx * scene->scale;
+	const float proj_add_y = scene->centery * scene->scale;
+	const float3 view_dir = f3((sx - proj_add_x) / scene->scale, (sy - proj_add_y) / scene->scale, 1.0f);
+
+	const xform inv_view = xform_invert(&scene->view_xform);
+	const float3 origin = inv_view.pos;
+	const float3 dir = v3_sub(xform_transform_pt(&inv_view, view_dir), origin);
+
+	const MeshInstance* best = NULL;
+	float best_t = 1.0e30f;
+
+	for (int n = 0; n < scene->inst_count; ++n)
+	{
+		const MeshInstance* inst = scene->instances[n];
+		const Mesh* mesh = inst->mesh;
+		if (!mesh)
+			continue;
+		const int frame = clamp_i(inst->frame, 0, mesh->vertex_frame_count - 1);
+
+		for (int i = 0; i < mesh->tri_count; ++i)
+		{
+			const uint16_t* idx = &mesh->tris[i * 3];
+			const float3 a = xform_transform_pt(&inst->tr, mesh_vertex_local(mesh, frame, idx[0]));
+			const float3 b = xform_transform_pt(&inst->tr, mesh_vertex_local(mesh, frame, idx[1]));
+			const float3 c = xform_transform_pt(&inst->tr, mesh_vertex_local(mesh, frame, idx[2]));
+			float t;
+			if (ray_tri_intersect(origin, dir, a, b, c, &t) && t < best_t)
+			{
+				best_t = t;
+				best = inst;
+			}
+		}
+	}
+	return best;
+}
 
 Mesh* mesh_load_from_file(const char* path)
 {

@@ -25,6 +25,8 @@ void frame_begin(void)
 
 void frame_end(void)
 {
+	if (G.show_fps)
+		plat_gfx_draw_stats(G.statval1, G.statval2);
 	plat_gfx_mark_updated_rows(0, SCREEN_Y - 1);
 	plat_sound_update();
 }

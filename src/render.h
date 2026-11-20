@@ -113,3 +113,6 @@ void scene_setCenter(Scene* scene, float x, float y);
 void scene_add_mesh(Scene* scene, const MeshInstance* inst);
 void scene_add_line(Scene* scene, float3 a, float3 b);
 void scene_draw(Scene* scene, uint8_t* buffer, int rowstride);
+
+// Возвращает ближайший к камере инстанс под экранной точкой (sx, sy) или NULL.
+const MeshInstance* scene_pick(const Scene* scene, float sx, float sy);

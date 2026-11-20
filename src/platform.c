@@ -68,6 +68,22 @@ void plat_gfx_draw_text(const char* text, int x, int y)
 	s_pd->graphics->drawText(text, strlen(text), kASCIIEncoding, x, y);
 }
 
+static PDMenuItem* s_fps_menu_item;
+
+static void fps_menu_callback(void* userdata)
+{
+	bool* flag = (bool*)userdata;
+	*flag = s_pd->system->getMenuItemValue(s_fps_menu_item) != 0;
+	if (*flag)
+		plat_gfx_begin_stats();
+}
+
+void plat_menu_add_fps_toggle(bool* flag)
+{
+	s_fps_menu_item = s_pd->system->addCheckmarkMenuItem("Show FPS", *flag ? 1 : 0, fps_menu_callback, flag);
+	s_pd->system->logToConsole("fps menu item: %p", (void*)s_fps_menu_item);
+}
+
 void plat_gfx_draw_stats(int par1, int par2)
 {
 	float cur_time = plat_time_get();
@@ -1103,7 +1119,14 @@ static void sapp_onevent(const sapp_event* evt)
 				s_but_pushed |= kPlatButtonB;
 			s_but_current |= kPlatButtonB;
 		}
-		if (evt->key_code == SAPP_KEYCODE_ESCAPE) {
+		if (evt->key_code == SAPP_KEYCODE_F && s_pc_fps_flag)
+		{
+			*s_pc_fps_flag = !*s_pc_fps_flag;
+			if (*s_pc_fps_flag)
+				plat_gfx_begin_stats();
+		}
+		if (evt->key_code == SAPP_KEYCODE_ESCAPE)
+		{
 			sapp_quit();
 		}
 	}

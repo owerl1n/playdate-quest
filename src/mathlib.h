@@ -127,7 +127,7 @@ static inline uint32_t float_to_half_topbits(float x)
 }
 
 // https://en.wikipedia.org/wiki/Fast_inverse_square_root
-inline float fast_rsqrt(float x)
+static inline float fast_rsqrt(float x)
 {
 	union {
 		float f;
@@ -138,9 +138,9 @@ inline float fast_rsqrt(float x)
 	fu.f *= 1.5f - (x * 0.5f * fu.f * fu.f);
 	return fu.f;
 }
-inline float fast_rcp(float x) { x = fast_rsqrt(x); return x * x; }
-inline float fast_div(float x, float y) { return x * fast_rsqrt(y); }
-inline float fast_sqrt(float x) { return x * fast_rsqrt(x); }
+static inline float fast_rcp(float x) { x = fast_rsqrt(x); return x * x; }
+static inline float fast_div(float x, float y) { return x * fast_rsqrt(y); }
+static inline float fast_sqrt(float x) { return x * fast_rsqrt(x); }
 
 static inline int min2(int a, int b)
 {

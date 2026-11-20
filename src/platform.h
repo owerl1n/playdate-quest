@@ -75,3 +75,7 @@ void* plat_realloc(void* ptr, size_t size);
 void plat_free(void* ptr);
 
 void plat_gfx_draw_text(const char* text, int x, int y);
+
+// Adds a "Show FPS" toggle: system menu checkmark on Playdate, F key on PC.
+// The flag is updated automatically.
+void plat_menu_add_fps_toggle(bool* flag);
