@@ -39,8 +39,9 @@ static float s_size;
 static int s_sel;               // какую деталь переключит следующее нажатие B
 static bool s_draw_bluenoise;
 
-float zoom = 1.4f;
-float sx = 0.525f, sy = 0.7f;   // где на экране должна стоять цель (0..1, как есть на экране)
+float zoom = 1.9f;
+bool use_ortho = true;
+float sx = 0.5f, sy = 0.7f;   // где на экране должна стоять цель (0..1, как есть на экране)
 
 
 static PlatBitmap* s_cursor;
@@ -159,8 +160,18 @@ static void cabinet_update(void)
 	                                   s_cam_dist * 1.0f,
 	                                   sinf(s_cam_angle) * s_cam_dist));
 									   
-	scene_setCamera(&s_scene, cam_pos, target, zoom, f3(0, 1, 0));
-	scene_setCenter(&s_scene, sx / zoom, sy / zoom);
+	if (use_ortho)
+	{
+		// Тот же масштаб на целевой точке, что и у перспективы: высота кадра = d / zoom
+		const float d = v3_len(v3_sub(cam_pos, target));
+		scene_setCameraOrtho(&s_scene, cam_pos, target, d / zoom, f3(0, 1, 0), 0.1f, d * 2.0f);
+		scene_setCenter(&s_scene, sx, sy);        // в ортографии без деления на zoom
+	}
+	else
+	{
+		scene_setCamera(&s_scene, cam_pos, target, zoom, f3(0, 1, 0));
+		scene_setCenter(&s_scene, sx / zoom, sy / zoom);
+	}
 
 
 

@@ -78,7 +78,13 @@ typedef struct Scene
 	float centery;
 
 	// display scaling factor. Default is 120, so that the screen extents are (-1.66,1.66)x(-1,1)
+	// Perspective: 240*zoom. Ortho: pixels per world unit.
 	float scale;
+
+	// Orthographic camera
+	bool  ortho;
+	float ortho_near;   // view-space depth range
+	float ortho_far;
 
 	int tmp_points_cap;
 	float3* tmp_view_points;
@@ -107,6 +113,8 @@ typedef struct Scene
 void scene_init(Scene* scene);
 void scene_shutdown(Scene* scene);
 void scene_setCamera(Scene* scene, float3 origin, float3 lookAt, float scale, float3 up);
+// height - сколько мировых единиц помещается по вертикали экрана.
+void scene_setCameraOrtho(Scene* scene, float3 origin, float3 lookAt, float height, float3 up, float near_z, float far_z);
 void scene_setLight(Scene* scene, float3 light);
 void scene_setCenter(Scene* scene, float x, float y);
 
@@ -116,3 +124,4 @@ void scene_draw(Scene* scene, uint8_t* buffer, int rowstride);
 
 // Возвращает ближайший к камере инстанс под экранной точкой (sx, sy) или NULL.
 const MeshInstance* scene_pick(const Scene* scene, float sx, float sy);
+

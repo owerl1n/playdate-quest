@@ -163,13 +163,43 @@ void scene_setCenter(Scene* scene, float x, float y)
 	scene->centery = y;
 }
 
-void scene_setCamera(Scene* scene, float3 origin, float3 lookAt, float scale, float3 up)
+static void scene_set_view(Scene* scene, float3 origin, float3 lookAt, float3 up)
 {
-	scene->scale = 240 * scale;
 	xform m = xform_look_at(origin, lookAt, up);
 	scene->camera_xform = m;
 	m.ay = v3_neg(m.ay);
 	scene->view_xform = xform_invert(&m);
+}
+
+void scene_setCamera(Scene* scene, float3 origin, float3 lookAt, float scale, float3 up)
+{
+	scene->ortho = false;
+	scene->scale = 240 * scale;
+	scene_set_view(scene, origin, lookAt, up);
+}
+
+void scene_setCameraOrtho(Scene* scene, float3 origin, float3 lookAt, float height, float3 up, float near_z, float far_z)
+{
+	scene->ortho = true;
+	scene->scale = (float)SCREEN_Y / height;
+	scene->ortho_near = near_z;
+	scene->ortho_far = far_z;
+	scene_set_view(scene, origin, lookAt, up);
+}
+
+// Где на экране находится начало view-пространства (точка, на которую смотрит камера).
+static void scene_proj_offsets(const Scene* scene, float* add_x, float* add_y)
+{
+	if (scene->ortho)
+	{
+		*add_x = SCREEN_X * scene->centerx;
+		*add_y = SCREEN_Y * scene->centery;
+	}
+	else
+	{
+		*add_x = 1.6666666f * scene->centerx * scene->scale;
+		*add_y = scene->centery * scene->scale;
+	}
 }
 
 typedef uint8_t Pattern[8];
@@ -330,20 +360,48 @@ static void draw_mesh_instance(Scene* scene, uint8_t* buffer, int rowstride, con
 	// project points to screen
 	const float k_min_z = 0.015f;
 	const float scene_scale = scene->scale;
-	const float proj_add_x = 1.6666666f * scene->centerx * scene_scale;
-	const float proj_add_y = scene->centery * scene_scale;
-	for (int i = 0; i < mesh->vertex_count; ++i)
+	float proj_add_x, proj_add_y;
+	scene_proj_offsets(scene, &proj_add_x, &proj_add_y);
+
+	if (scene->ortho)
 	{
-		const float3* p = &scene->tmp_view_points[i];
-		float3* pp = &scene->tmp_proj_points[i];
-		const float pz = p->z;
-		if (pz >= k_min_z)
+		const float zn = scene->ortho_near, zf = scene->ortho_far;
+		const float inv_range = 1.0f / (zf - zn);
+		for (int i = 0; i < mesh->vertex_count; ++i)
 		{
-			const float inv_z = scene_scale / pz;
-			pp->x = p->x * inv_z + proj_add_x;
-			pp->y = p->y * inv_z + proj_add_y;
+			const float3* p = &scene->tmp_view_points[i];
+			float3* pp = &scene->tmp_proj_points[i];
+			const float pz = p->z;
+			if (pz >= zn && pz <= zf)
+			{
+				pp->x = p->x * scene_scale + proj_add_x;
+				pp->y = p->y * scene_scale + proj_add_y;
+				float t = (zf - pz) * inv_range;        // 1 = близко, 0 = далеко
+				if (t < 1.0e-4f) t = 1.0e-4f;
+				pp->z = scene->z_near / t;              // 1/pp->z линейна по экрану
+			}
+			else
+			{
+				pp->x = pp->y = 0.0f;
+				pp->z = 0.0f;                           // < k_min_z => треугольник отсекается
+			}
 		}
-		pp->z = pz;
+	}
+	else
+	{
+		for (int i = 0; i < mesh->vertex_count; ++i)
+		{
+			const float3* p = &scene->tmp_view_points[i];
+			float3* pp = &scene->tmp_proj_points[i];
+			const float pz = p->z;
+			if (pz >= k_min_z)
+			{
+				const float inv_z = scene_scale / pz;
+				pp->x = p->x * inv_z + proj_add_x;
+				pp->y = p->y * inv_z + proj_add_y;
+			}
+			pp->z = pz;
+		}
 	}
 
 	// backface / z / screen bounds cull triangles
@@ -506,22 +564,34 @@ void scene_draw(Scene* scene, uint8_t* buffer, int rowstride)
 
 	// draw loose lines
 	const float scene_scale = scene->scale;
-	const float proj_add_x = 1.6666666f * scene->centerx * scene_scale;
-	const float proj_add_y = scene->centery * scene_scale;
+	float proj_add_x, proj_add_y;
+	scene_proj_offsets(scene, &proj_add_x, &proj_add_y);
 	for (int i = 0; i < scene->line_count; i += 2)
 	{
-		float3 view_a = xform_transform_pt(&scene->view_xform, scene->line_buf[i + 0]);
-		float3 view_b = xform_transform_pt(&scene->view_xform, scene->line_buf[i + 1]);
-		if (view_a.z > 0 && view_b.z > 0)
+		float3 va = xform_transform_pt(&scene->view_xform, scene->line_buf[i + 0]);
+		float3 vb = xform_transform_pt(&scene->view_xform, scene->line_buf[i + 1]);
+		float3 a, b;
+		if (scene->ortho)
 		{
-			view_a.x = view_a.x * scene_scale / view_a.z + proj_add_x;
-			view_a.y = view_a.y * scene_scale / view_a.z + proj_add_y;
-			view_b.x = view_b.x * scene_scale / view_b.z + proj_add_x;
-			view_b.y = view_b.y * scene_scale / view_b.z + proj_add_y;
-			draw_line_z(buffer, rowstride, &view_a, &view_b, s_zscale);
+			const float zn = scene->ortho_near, zf = scene->ortho_far;
+			if (va.z < zn || vb.z < zn || va.z > zf || vb.z > zf)
+				continue;
+			const float inv_range = 1.0f / (zf - zn);
+			float ta = fmaxf((zf - va.z) * inv_range, 1.0e-4f);
+			float tb = fmaxf((zf - vb.z) * inv_range, 1.0e-4f);
+			a = f3(va.x * scene_scale + proj_add_x, va.y * scene_scale + proj_add_y, scene->z_near / ta);
+			b = f3(vb.x * scene_scale + proj_add_x, vb.y * scene_scale + proj_add_y, scene->z_near / tb);
 		}
+		else
+		{
+			if (!(va.z > 0 && vb.z > 0))
+				continue;
+			a = f3(va.x * scene_scale / va.z + proj_add_x, va.y * scene_scale / va.z + proj_add_y, va.z);
+			b = f3(vb.x * scene_scale / vb.z + proj_add_x, vb.y * scene_scale / vb.z + proj_add_y, vb.z);
+		}
+		draw_line_z(buffer, rowstride, &a, &b, s_zscale);
 	}
-	scene->line_count = 0; // clear lines each frame
+	scene->line_count = 0;
 }
 
 // --------------------------------------------------------------------------
@@ -565,18 +635,28 @@ static bool ray_tri_intersect(float3 o, float3 d, float3 a, float3 b, float3 c, 
 
 const MeshInstance* scene_pick(const Scene* scene, float sx, float sy)
 {
-	// Обратная проекция: точка на экране -> луч в мировом пространстве.
-	// view_xform строился с перевёрнутой осью Y, поэтому берём его инверсию как есть.
-	const float proj_add_x = 1.6666666f * scene->centerx * scene->scale;
-	const float proj_add_y = scene->centery * scene->scale;
-	const float3 view_dir = f3((sx - proj_add_x) / scene->scale, (sy - proj_add_y) / scene->scale, 1.0f);
-
+	float proj_add_x, proj_add_y;
+	scene_proj_offsets(scene, &proj_add_x, &proj_add_y);
 	const xform inv_view = xform_invert(&scene->view_xform);
-	const float3 origin = inv_view.pos;
-	const float3 dir = v3_sub(xform_transform_pt(&inv_view, view_dir), origin);
+
+	float3 origin, dir;
+	if (scene->ortho)
+	{
+		const float vx = (sx - proj_add_x) / scene->scale;
+		const float vy = (sy - proj_add_y) / scene->scale;
+		origin = xform_transform_pt(&inv_view, f3(vx, vy, scene->ortho_near));
+		dir = v3_sub(xform_transform_pt(&inv_view, f3(vx, vy, scene->ortho_near + 1.0f)), origin);
+	}
+	else
+	{
+		const float3 view_dir = f3((sx - proj_add_x) / scene->scale, (sy - proj_add_y) / scene->scale, 1.0f);
+		origin = inv_view.pos;
+		dir = v3_sub(xform_transform_pt(&inv_view, view_dir), origin);
+	}
 
 	const MeshInstance* best = NULL;
 	float best_t = 1.0e30f;
+
 
 	for (int n = 0; n < scene->inst_count; ++n)
 	{
