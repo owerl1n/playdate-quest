@@ -4,27 +4,31 @@
 #include "../../platform.h"
 #include "../../render.h"
 
-// bias < 0: рисуется позже (поверх), bias > 0: раньше (под остальными).
 typedef struct Part {
 	const char* file;
 	float bias;
 	bool visible;
+	bool wall;        // опускается, когда стоит между камерой и комнатой
+	int link;         // 0 = своя стена, иначе повторять h детали с индексом link-1 (дверь, рама)
 	Mesh* mesh;
 	MeshInstance inst;
+	float2 out_dir;   // горизонтальное направление «наружу» (x, z)
+	float h;          // 1 = полная высота, 0 = низкий бортик
 } Part;
 
-#define PART_COUNT 14
-#define PART_KEY   14
+#define PART_COUNT 7
+#define PART_KEY 0
 static Part s_parts[PART_COUNT];
 
+
 static const Part k_parts_def[PART_COUNT] = {
-	{"models/floor.pdm", 0.0f, true},
-    {"models/door.pdm", 0.0f, true},
-	{"models/frame.pdm", 0.0f, true},
-	{"models/wall_frame.pdm", 0.0f, true},
-	{"models/wall1.pdm", 0.0f, true},
-	{"models/wall2.pdm", 0.0f, true},
-	{"models/wall3.pdm", 0.0f, true},
+	{ .file = "models/floor.pdm",      .visible = true },
+	{ .file = "models/door.pdm",       .visible = true, .wall = true },
+	{ .file = "models/frame.pdm",      .visible = true, .wall = true },
+	{ .file = "models/wall_frame.pdm", .visible = true, .wall = true },
+	{ .file = "models/wall1.pdm",      .visible = true, .wall = true },
+	{ .file = "models/wall2.pdm",      .visible = true, .wall = true },
+	{ .file = "models/wall3.pdm",      .visible = true, .wall = true },
 };
 
 static Scene s_scene;
@@ -94,12 +98,27 @@ static void cabinet_enter(void)
 	}
 	rebuild_scene();
 
+	for (int i = 0; i < PART_COUNT; ++i)
+		s_parts[i].h = 1.0f;
+
 	if (s_parts[0].mesh)
 	{
-		s_size = v3_len(v3_sub(s_parts[0].mesh->bbox_max, s_parts[0].mesh->bbox_min));
-		s_cam_dist = s_size * 1.5f;
-		s_min_dist = s_size * 0.6f;
-		s_scene.z_near = s_size * 0.1f;
+		const float3 room_c = s_parts[0].mesh->center;
+		for (int i = 0; i < PART_COUNT; ++i)
+		{
+			Part *p = &s_parts[i];
+			if (!p->mesh)
+				continue;
+			float dx = p->mesh->center.x - room_c.x;
+			float dz = p->mesh->center.z - room_c.z;
+			float l = sqrtf(dx * dx + dz * dz);
+			if (l > 1.0e-5f)
+			{
+				dx /= l;
+				dz /= l;
+			}
+			p->out_dir = (float2){dx, dz};
+		}
 	}
 }
 
@@ -143,6 +162,8 @@ static void cabinet_update(void)
 	scene_setCamera(&s_scene, cam_pos, target, zoom, f3(0, 1, 0));
 	scene_setCenter(&s_scene, sx / zoom, sy / zoom);
 
+
+
 	// клик: после setCamera, чтобы view_xform был актуальным
 	if (G.buttons_pressed & kPlatButtonA)
 	{
@@ -151,8 +172,41 @@ static void cabinet_update(void)
 			plat_sys_log_error("Key clicked!");
 	}
 
+		// --- ближние стены: состояние = функция текущего угла камеры ---
+	const float cdx = cosf(s_cam_angle), cdz = sinf(s_cam_angle); // горизонтальное направление на камеру
+	const float k_speed = 6.0f;      // ед./сек: полный ход ~0.17 с, выше скорости быстрого кранка
+	const float k_min_h = 0.12f;     // высота бортика
+
+	const float k_deg_down = 85.0f;   // при угле меньше этого стена полностью опущена
+	const float k_deg_up   = 100.0f;  // при угле больше этого стена полностью стоит
+	const float k_to_rad   = 3.14159265f / 180.0f;
+
+
+	// 1) своя цель для каждой стены
 	for (int i = 0; i < PART_COUNT; ++i)
-		s_parts[i].inst.sort_bias = s_parts[i].bias * s_size;
+	{
+		Part* p = &s_parts[i];
+		if (!p->wall || !p->mesh || p->link) continue;
+		float facing = p->out_dir.x * cdx + p->out_dir.y * cdz;       // 1 = стена прямо перед камерой
+		float target = 1.0f - smoothstep(cosf(k_deg_up * k_to_rad),
+                                 cosf(k_deg_down * k_to_rad), facing);
+		float step = k_speed * G.t_dt;
+		if (p->h < target) p->h = fminf(p->h + step, target);
+		else               p->h = fmaxf(p->h - step, target);
+	}
+
+	// 2) применяем h как вертикальный масштаб вокруг низа детали
+	for (int i = 0; i < PART_COUNT; ++i)
+	{
+		Part* p = &s_parts[i];
+		if (!p->wall || !p->mesh) continue;
+		if (p->link)
+			p->h = s_parts[p->link - 1].h;
+		float hh = k_min_h + (1.0f - k_min_h) * p->h;
+		p->inst.tr = xform_identity;
+		p->inst.tr.ay = f3(0, hh, 0);
+		p->inst.tr.pos.y = p->mesh->bbox_min.y * (1.0f - hh);
+	}
 
 	scene_draw(&s_scene, G.framebuffer, G.framebuffer_stride);
 

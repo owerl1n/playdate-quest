@@ -1,5 +1,6 @@
 ﻿# Папки со сборками (CMakePresets.json кладёт всё в build/<имя пресета>)
 build/
+blender/
 out/
 cmake-build-*/
 CMakeFiles/
